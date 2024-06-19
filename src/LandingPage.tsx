@@ -19,7 +19,7 @@ const LandingPage = () => {
                 about
             </button>
             <button className="creation-btn bg-green-300 mx-5 my-5 p-3 absolute right-24">
-                creation
+                creations
             </button>
         </div>
      );
