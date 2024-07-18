@@ -1,0 +1,22 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+button, .logo {
+    cursor: pointer;
+    /* border-radius: 5px; */
+    /* border-width: 1px;
+    border-color: black; */
+}
+
+.landing-page {
+    background-image: url('../media/bg.png');
+    min-height: 100vh;
+    min-width: 100vw;
+    background-size: cover;
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    overflow: hidden;
+    z-index: -1; /* sets this image behind everything else */
+}
