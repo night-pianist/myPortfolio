@@ -1,6 +1,7 @@
 import { useNavigate, Link } from 'react-router-dom';
 import '../styling/landing.css';
 import logo from '../media/logo.png'
+import bg from '../media/bg.png'
 
 const LandingPage = () => {
     const navigate = useNavigate();
@@ -11,6 +12,12 @@ const LandingPage = () => {
 
     return ( 
         <div className="landing-page">
+            <img 
+                src={bg} 
+                alt="bg" 
+                style={{ zIndex: '-10'}}
+                className="bg-pic" 
+            />
             <div className="navbar relative flex items-center">
                 <img 
                     src={logo} 
@@ -35,13 +42,22 @@ const LandingPage = () => {
                     </button>
                 </div>
             </div>
-            <div className="content">
+            <div className="welcome">
                 <h1 
                     className="sm:text-3xl md:text-4xl lg:text-5xl text-white" 
-                    style={{ margin: '3%' }} 
+                    style={{ marginLeft: '3%' }} 
                 >
-                    hey! i'm khiet 
+                    welcome
                 </h1>
+                <h1 
+                    className="welcome sm:text-3xl md:text-4xl lg:text-5xl text-white" 
+                    style={{ marginLeft: '3%' }} 
+                >
+                    to my canvas!
+                </h1>
+            </div>
+            <div className="main-content">
+                
             </div>
         </div>
      );
