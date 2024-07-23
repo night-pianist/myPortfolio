@@ -10,26 +10,39 @@ const LandingPage = () => {
     const creationsOnClick = () => { navigate('/creations'); } // go to the creations page
 
     return ( 
-        <div className="landing-page flex">
-            <img 
-                src={logo} 
-                alt="logo" 
-                className="logo h-[4%] w-[4%] m-3" 
-                onClick={logoOnClick}
-            />
-            <button // about button 
-                className="about-btn bg-green-300 mx-5 my-5 p-3 absolute right-0 rounded-md"
-                onClick={aboutOnClick}
-            > 
-                about
-            </button>
-
-            <button // creations button
-                className="creation-btn bg-green-300 mx-5 my-5 p-3 absolute right-24 rounded-md"
-                onClick={creationsOnClick}
-            >
-                creations
-            </button>
+        <div className="landing-page">
+            <div className="navbar relative flex items-center">
+                <img 
+                    src={logo} 
+                    alt="logo" 
+                    className="logo h-[5%] w-[5%] m-3" 
+                    onClick={logoOnClick}
+                />
+                <div className="btns-container absolute top-0 right-0 flex justify-end space-x-4" style={{ padding: '1%'}}>
+                    <button // about button 
+                        className="about-btn bg-ice-blue sm:text-sm md:text-md lg:text-lg rounded-md"
+                        style={{ padding: '5%' }}
+                        onClick={aboutOnClick}
+                    > 
+                        creations
+                    </button>
+                    <button // creations button
+                        className="creation-btn bg-ice-blue sm:text-sm md:text-md lg:text-lg rounded-md"
+                        style={{ padding: '5%' }}
+                        onClick={creationsOnClick}
+                    >
+                        about
+                    </button>
+                </div>
+            </div>
+            <div className="content">
+                <h1 
+                    className="sm:text-3xl md:text-4xl lg:text-5xl text-white" 
+                    style={{ margin: '3%' }} 
+                >
+                    hey! i'm khiet 
+                </h1>
+            </div>
         </div>
      );
 }
