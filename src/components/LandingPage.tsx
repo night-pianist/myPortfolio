@@ -15,31 +15,32 @@ const LandingPage = () => {
             <img 
                 src={bg} 
                 alt="bg" 
-                style={{ zIndex: '-10'}}
                 className="bg-pic" 
             />
-            <div className="navbar relative flex items-center">
-                <img 
-                    src={logo} 
-                    alt="logo" 
-                    className="logo h-[5%] w-[5%] m-3" 
-                    onClick={logoOnClick}
-                />
-                <div className="btns-container absolute top-0 right-0 flex justify-end space-x-4" style={{ padding: '1%'}}>
-                    <button // about button 
-                        className="about-btn bg-ice-blue sm:text-sm md:text-md lg:text-lg rounded-md"
-                        style={{ padding: '5%' }}
-                        onClick={aboutOnClick}
-                    > 
-                        creations
-                    </button>
-                    <button // creations button
-                        className="creation-btn bg-ice-blue sm:text-sm md:text-md lg:text-lg rounded-md"
-                        style={{ padding: '5%' }}
-                        onClick={creationsOnClick}
-                    >
-                        about
-                    </button>
+            <div className="navbar absolute w-[99%]">
+                <div className="relative flex items-center">
+                    <img 
+                        src={logo} 
+                        alt="logo" 
+                        className="logo h-[5%] w-[5%] m-3" 
+                        onClick={logoOnClick}
+                    />
+                    <div className="btns-container absolute top-0 right-0 flex justify-end space-x-4" style={{ padding: '1%'}}>
+                        <button // about button 
+                            className="about-btn bg-ice-blue sm:text-sm md:text-md lg:text-lg rounded-md"
+                            style={{ padding: '5%' }}
+                            onClick={aboutOnClick}
+                        > 
+                            creations
+                        </button>
+                        <button // creations button
+                            className="creation-btn bg-ice-blue sm:text-sm md:text-md lg:text-lg rounded-md"
+                            style={{ padding: '5%' }}
+                            onClick={creationsOnClick}
+                        >
+                            about
+                        </button>
+                    </div>
                 </div>
             </div>
             <div className="welcome">
@@ -56,8 +57,8 @@ const LandingPage = () => {
                     to my canvas!
                 </h1>
             </div>
-            <div className="main-content">
-                
+            <div className="main-content text-white">
+                i'm khiet!
             </div>
         </div>
      );

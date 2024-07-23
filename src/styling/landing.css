@@ -7,13 +7,6 @@ html, body {
 
 button, .logo {
     cursor: pointer;
-    /* border-radius: 5px; */
-    /* border-width: 1px;
-    border-color: black; */
-}
-
-.landing-page {
-    /* background-color: #080737; */
 }
 
 .bg-pic {
@@ -26,13 +19,18 @@ button, .logo {
     z-index: -1;
 }
 
+.logo {
+    /* position: absolute; */
+    /* z-index: 100; */
+}
+
 .welcome {
-    /* min-height: 80vh; */
+    min-height: 100vh;
 }
 
 .main-content {
     /* background: linear-gradient(to bottom, transparent, black 100vh); */
-    /* background-color: #080737; */
+    background-color: #080737;
     min-height: 100vh;
     /* height: 100vh; */
 }
