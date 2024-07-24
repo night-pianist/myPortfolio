@@ -19,13 +19,33 @@ button, .logo {
     z-index: -1;
 }
 
-.logo {
-    /* position: absolute; */
-    /* z-index: 100; */
+.text-outline {
+    text-shadow: 
+        -1px -1px 0 #439cf0,  
+         1px -1px 0 #439cf0,
+        -1px  1px 0 #439cf0,
+         1px  1px 0 #439cf0;
+}
+
+.gradient-shadow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90%; /* Adjust the height as needed */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    pointer-events: none; /* Ensure it doesn't interfere with interactions */
+    z-index: 1; /* Ensure it is above the navbar content */
 }
 
 .welcome {
     min-height: 100vh;
+}
+
+.transition {
+    background: linear-gradient(to bottom, transparent, #080737);
+    min-height: 30vh;
 }
 
 .main-content {
@@ -34,3 +54,39 @@ button, .logo {
     min-height: 100vh;
     /* height: 100vh; */
 }
+
+@keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .animated-div {
+    opacity: 0;
+    transform: translateX(-50px); /* Adjust to fit the movement you want */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .animate-left {
+    animation: slideInLeft 1s ease-out forwards;
+  }
+  
+  .animate-right {
+    animation: slideInRight 1s ease-out forwards;
+  }
