@@ -7,36 +7,20 @@ interface AnimatedTextProps {
   }  
 
 const AnimatedText: React.FC<AnimatedTextProps> = ({ text }) => {
-    const { ref, inView } = useInView({
-        triggerOnce: true, // Optional: only trigger the animation once
-        threshold: 0.1,    // Trigger when 10% of the element is visible
-    });
+    const { ref: ref, inView: inView } = useInView({ triggerOnce: true, threshold: 0.3 });
     return (
-        <div
-            ref={ref}
-            className={`flex space-x-1 ${inView ? 'animate-fadeIn' : ''}`}
-        >
-        {text.split('').map((char, index) => (
+        <div className="flex">
+        {text.split('').map((char: string, index: number) => (
             <span
-            key={index}
-            className={`inline-block ${inView ? 'opacity-100' : 'opacity-0'} animate-fadeInLeft`}
-            style={{ animationDelay: `${index * 0.1}s` }}
+                key={index}
+                ref={ref}
+                className={`animated-div inline-block transform ${inView ? 'animate-title' : ''}`}
+                style={{ animationDelay: `${index * 0.1}s` }}
             >
-            {char === ' ' ? '\u00A0' : char}
+                {char === ' ' ? '\u00A0' : char}
             </span>
         ))}
         </div>
-    // <div className="flex space-x-1">
-    //   {text.split('').map((char: string, index: number) => (
-    //      <span
-    //         key={index}
-    //         className="inline-block opacity-0 animate-fadeInLeft"
-    //         style={{ animationDelay: `${index * 0.1}s` }}
-    //     >
-    //         {char === ' ' ? '\u00A0' : char}
-    //     </span>
-    //   ))}
-    // </div>
     );
 };
 
