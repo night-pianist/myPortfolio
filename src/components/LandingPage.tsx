@@ -3,6 +3,7 @@ import { useInView } from 'react-intersection-observer'; // scrolling effect
 import '../styling/landing.css';
 import logo from '../media/logo.png'
 import bg from '../media/bg.png'
+import AnimatedText from './AnimatedWelcome';
 
 const LandingPage = () => {
     const navigate = useNavigate();
@@ -62,32 +63,24 @@ const LandingPage = () => {
                 >
                     to my canvas!
                 </h1>
-                {/* <h1 
-                    className="welcome sm:text-3xl md:text-4xl lg:text-5xl text-white" 
-                    style={{ marginLeft: '3%' }} 
-                >
-                    to my canvas!
-                </h1> */}
             </div>
-            <div className="transition">
-
-            </div>
-            <div className="main-content text-white sm:text-5xl md:text-6xl lg:text-7xl flex flex-vertical justify-center" style={{ padding: '3%'}}>
-                <div className="title">
-                    i'm khiet!
+            <div className="transition"></div>
+            <div className="main-content text-white sm:text-5xl md:text-6xl lg:text-7xl flex flex-col items-center" style={{ padding: '3%'}}>
+                <div className="title m-10 italic font-dancingscript" style={{ marginBottom: '15%'}}>
+                    <AnimatedText text="hi im khiet" />
                 </div>
-                <div className="overflow-hidden">
+                <div className="overflow-hidden text-center">
                     <div ref={ref1} className={`animated-div ${inView1 ? 'animate-left' : ''}`}>
-                        <p>I’m an artist...</p>
+                        <p>an artist...</p>
                     </div>
                     <div ref={ref2} className={`animated-div ${inView2 ? 'animate-right' : ''}`}>
-                        <p>I’m a CAD technician...</p>
+                        <p>a programmer...</p>
                     </div>
                     <div ref={ref3} className={`animated-div ${inView3 ? 'animate-left' : ''}`}>
-                        <p>I’m a programmer...</p>
+                        <p>a CAD technician...</p>
                     </div>
                     <div ref={ref4} className={`animated-div ${inView4 ? 'animate-right' : ''}`}>
-                        <p>I’m a music lover...</p>
+                        <p>a music lover...</p>
                     </div>
                 </div>
             </div>

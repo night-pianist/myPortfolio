@@ -21,10 +21,10 @@ button, .logo {
 
 .text-outline {
     text-shadow: 
-        -1px -1px 0 #439cf0,  
-         1px -1px 0 #439cf0,
-        -1px  1px 0 #439cf0,
-         1px  1px 0 #439cf0;
+        -2px -2px 0 #318CDC,  
+         2px -2px 0 #318CDC,
+        -2px  2px 0 #318CDC,
+         2px  2px 0 #318CDC;
 }
 
 .gradient-shadow::before {
@@ -89,4 +89,8 @@ button, .logo {
   
   .animate-right {
     animation: slideInRight 1s ease-out forwards;
+  }
+
+  .animate-fadeIn {
+    opacity: 1; /* Ensure opacity changes when the element is in view */
   }
