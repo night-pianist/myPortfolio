@@ -1,8 +1,10 @@
 import { useNavigate, Link } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer'; // scrolling effect
 import '../styling/landing.css';
-import logo from '../media/logo.png'
-import bg from '../media/bg.png'
+import logo from '../media/logo.png';
+import bg from '../media/bg.png';
+import leftArrow from '../media/leftArrow.png';
+import rightArrow from '../media/rightArrow.png';
 import AnimatedText from './AnimatedWelcome';
 
 const LandingPage = () => {
@@ -26,7 +28,7 @@ const LandingPage = () => {
             />
             <div className="navbar absolute w-[99%] gradient-shadow">
                 <div className="relative flex items-center">
-                    <img 
+                    <img
                         src={logo} 
                         alt="logo" 
                         className="logo h-[5%] w-[5%] m-3 cursor-pointer" 
@@ -61,18 +63,57 @@ const LandingPage = () => {
                     <AnimatedText text="im khiet!" />
                 </div>
                 <div className="overflow-hidden text-center"> 
-                    <div ref={ref1} className={`animated-div ${inView1 ? 'animate-left' : ''}`}>
-                        <p>an artist</p>
+                    <div ref={ref1} className={`relative flex items-center animated-div ${inView1 ? 'animate-left' : ''}`} style={{ width: '100vw' }}>
+                        <img 
+                            src={leftArrow} 
+                            alt="bg" 
+                            className=" -z-10" 
+                            style={{ 
+                                width: '75vw',
+                                 
+                            }}
+                        />
+                        <p className="absolute text-center w-full">an artist</p>
                     </div>
-                    <div ref={ref2} className={`animated-div ${inView2 ? 'animate-right' : ''}`}>
-                        <p>a programmer</p>
+                    <div ref={ref2} className={`relative flex items-center justify-end animated-div ${inView2 ? 'animate-right' : ''}`} style={{ width: '100vw' }}>
+                        <img 
+                            src={rightArrow} 
+                            alt="bg" 
+                            className=" -z-10" 
+                            style={{ 
+                                width: '75vw',
+                                 
+                            }}
+                        />
+                        <p className="absolute text-center w-full">a programmer</p>
                     </div>
-                    <div ref={ref3} className={`animated-div ${inView3 ? 'animate-left' : ''}`}>
-                        <p>a CAD technician</p>
+                    <div ref={ref3} className={`relative flex items-center animated-div ${inView3 ? 'animate-left' : ''}`} style={{ width: '100vw' }}>
+                        <img 
+                            src={leftArrow} 
+                            alt="bg" 
+                            className=" -z-10" 
+                            style={{ 
+                                width: '75vw',
+                                 
+                            }}
+                        />
+                        <p className="absolute text-center w-full">a CAD technician</p>
                     </div>
-                    <div ref={ref4} className={`animated-div ${inView4 ? 'animate-right' : ''}`}>
+                    <div ref={ref4} className={`relative flex items-center justify-end animated-div ${inView4 ? 'animate-right' : ''}`} style={{ width: '100vw' }}>
+                        <img 
+                            src={rightArrow} 
+                            alt="bg" 
+                            className=" -z-10" 
+                            style={{ 
+                                width: '75vw',
+                                 
+                            }}
+                        />
+                        <p className="absolute text-center w-full">a music lover</p>
+                    </div>
+                    {/* <div ref={ref4} className={`animated-div ${inView4 ? 'animate-right' : ''}`}>
                         <p>a music lover</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
