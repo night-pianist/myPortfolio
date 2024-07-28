@@ -15,7 +15,10 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({ text }) => {
                 key={index}
                 ref={ref}
                 className={`animated-div inline-block transform ${inView ? 'animate-title' : ''}`}
-                style={{ animationDelay: `${index * 0.1}s` }}
+                style={{ 
+                    animationDelay: `${index * 0.1}s`,
+                    textShadow: '0 0 10px rgba(255, 255, 255, 0.7)', 
+                }}
             >
                 {char === ' ' ? '\u00A0' : char}
             </span>

@@ -6,14 +6,6 @@ html, body {
 }
 
 /* NAVBAR STYLING */
-.text-outline {
-    text-shadow: 
-        -2px -2px 0 #318CDC,  
-         2px -2px 0 #318CDC,
-        -2px  2px 0 #318CDC,
-         2px  2px 0 #318CDC;
-}
-
 .gradient-shadow::before {
     content: '';
     position: absolute;

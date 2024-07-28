@@ -36,15 +36,21 @@ const LandingPage = () => {
                     />
                     <div className="btns-container absolute top-0 right-0 flex justify-end space-x-4" style={{ padding: '1%'}}>
                         <button // about button 
-                            className="about-btn text-outline tracking-wide text-white sm:text-sm md:text-md lg:text-lg rounded-md cursor-pointer"
-                            style={{ padding: '5%' }}
+                            className="about-btn tracking-wide text-white sm:text-sm md:text-md lg:text-lg rounded-md cursor-pointer"
+                            style={{ 
+                                padding: '5%',
+                                textShadow: `0 0 5px rgba(115, 189, 255, 1.0)` 
+                            }}
                             onClick={aboutOnClick}
                         > 
                             creations
                         </button>
                         <button // creations button
-                            className="creation-btn text-outline tracking-wide text-white sm:text-sm md:text-md lg:text-lg rounded-md cursor-pointer"
-                            style={{ padding: '5%' }}
+                            className="creation-btn tracking-wide text-white sm:text-sm md:text-md lg:text-lg rounded-md cursor-pointer"
+                            style={{ 
+                                padding: '5%',
+                                textShadow: `0 0 5px rgba(115, 189, 255, 1.0)` 
+                            }}
                             onClick={creationsOnClick}
                         >
                             about
