@@ -5,6 +5,7 @@ import logo from '../media/logo.png';
 import bg from '../media/bg.png';
 import leftArrow from '../media/leftArrow.png';
 import rightArrow from '../media/rightArrow.png';
+import newArrow from '../media/newArrow.png';
 import AnimatedText from './AnimatedWelcome';
 
 const LandingPage = () => {
@@ -31,25 +32,32 @@ const LandingPage = () => {
                     <img
                         src={logo} 
                         alt="logo" 
-                        className="logo h-[5%] w-[5%] m-3 cursor-pointer" 
+                        className="logo h-[5%] w-[5%] m-[1%] cursor-pointer" 
                         onClick={logoOnClick}
+                        style={{
+                            filter: 'drop-shadow(0 0 10px rgba(115, 189, 255, 0.5))'
+                        }}                    
                     />
                     <div className="btns-container absolute top-0 right-0 flex justify-end space-x-4" style={{ padding: '1%'}}>
                         <button // about button 
-                            className="about-btn tracking-wide text-white sm:text-sm md:text-md lg:text-lg rounded-md cursor-pointer"
+                            className="about-btn tracking-wide text-white font-varelaround sm:text-md md:text-lg lg:text-xl rounded-md cursor-pointer"
                             style={{ 
-                                padding: '5%',
-                                textShadow: `0 0 5px rgba(115, 189, 255, 1.0)` 
+                                padding: '3%',
+                                margin: '10%',
+                                textShadow: `0 0 5px rgba(255, 255, 255, 0.5)`,
+                                filter: 'drop-shadow(0 0 7px rgba(115, 189, 255, 1.0))'
                             }}
                             onClick={aboutOnClick}
                         > 
                             creations
                         </button>
                         <button // creations button
-                            className="creation-btn tracking-wide text-white sm:text-sm md:text-md lg:text-lg rounded-md cursor-pointer"
+                            className="creation-btn tracking-wide text-white font-varelaround sm:text-md md:text-lg lg:text-xl rounded-md cursor-pointer"
                             style={{ 
-                                padding: '5%',
-                                textShadow: `0 0 5px rgba(115, 189, 255, 1.0)` 
+                                padding: '3%',
+                                margin: '10%',
+                                textShadow: `0 0 5px rgba(255, 255, 255, 0.5)`,
+                                filter: 'drop-shadow(0 0 7px rgba(115, 189, 255, 1.0))'
                             }}
                             onClick={creationsOnClick}
                         >
@@ -79,11 +87,14 @@ const LandingPage = () => {
                                  
                             }}
                         />
-                        <p className="absolute text-center w-full">an artist</p>
+                        <p className="absolute text-center w-full">
+                            <span className="font-varelaround sm:text-4xl md:text-5xl lg:text-6xl italic">an</span> 
+                            <span className="font-dancingscript sm:text-6xl md:text-7xl lg:text-8xl"> artist</span>
+                        </p>
                     </div>
                     <div ref={ref2} className={`relative flex items-center justify-end animated-div ${inView2 ? 'animate-right' : ''}`} style={{ width: '100vw' }}>
                         <img 
-                            src={rightArrow} 
+                            src={newArrow} 
                             alt="bg" 
                             className=" -z-10" 
                             style={{ 
@@ -91,7 +102,7 @@ const LandingPage = () => {
                                  
                             }}
                         />
-                        <p className="absolute text-center w-full">a programmer</p>
+                        <p className="absolute text-center w-full sm:text-5xl md:text-6xl lg:text-7xl">a programmer</p>
                     </div>
                     <div ref={ref3} className={`relative flex items-center animated-div ${inView3 ? 'animate-left' : ''}`} style={{ width: '100vw' }}>
                         <img 
@@ -103,7 +114,7 @@ const LandingPage = () => {
                                  
                             }}
                         />
-                        <p className="absolute text-center w-full">a CAD technician</p>
+                        <p className="absolute text-center w-full sm:text-5xl md:text-6xl lg:text-7xl">a CAD technician</p>
                     </div>
                     <div ref={ref4} className={`relative flex items-center justify-end animated-div ${inView4 ? 'animate-right' : ''}`} style={{ width: '100vw' }}>
                         <img 
@@ -115,7 +126,7 @@ const LandingPage = () => {
                                  
                             }}
                         />
-                        <p className="absolute text-center w-full">a music lover</p>
+                        <p className="absolute text-center w-full sm:text-5xl md:text-6xl lg:text-7xl">a music lover</p>
                     </div>
                     {/* <div ref={ref4} className={`animated-div ${inView4 ? 'animate-right' : ''}`}>
                         <p>a music lover</p>
