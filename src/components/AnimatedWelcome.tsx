@@ -8,11 +8,11 @@ interface AnimatedTextProps {
 }  
 
 const AnimatedText: React.FC<AnimatedTextProps> = ({ text, onAnimationEnd }) => {
-    const { ref: ref, inView: inView } = useInView({ triggerOnce: true, threshold: 0.3 });
+    const { ref: ref, inView: inView } = useInView({ triggerOnce: true, threshold: 0.1 });
     
     useEffect(() => {
         if (inView && onAnimationEnd) {
-          const animationDuration = text.length * 0.1 * 1000; // Calculate based on animation delay
+          const animationDuration = text.length * 0.1 * 800; // Calculate based on animation delay
           const timer = setTimeout(() => {
             onAnimationEnd();
           }, animationDuration);

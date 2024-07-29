@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html, body {
     height: 100%;
     width: 100%;
@@ -70,12 +76,12 @@ html, body {
 
 .animate-left { /* slide in from left */
   animation: slideInLeft 1s ease-out forwards;
-  margin-bottom: 200px;
+  /* margin-bottom: 200px; */
 }
 
 .animate-right { /* slide in from right */
   animation: slideInRight 1s ease-out forwards;
-  margin-bottom: 200px;
+  /* margin-bottom: 200px; */
 }
 
 /* ANIMATION FOR TYPING EFFECT */
@@ -95,5 +101,5 @@ html, body {
   overflow: hidden;
   border-right: 0.15em solid black; /* Adjust the caret color */
   width: 0; /* Initially hide the text */
-  animation: typing 2s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
+  animation: typing 3s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
 }

@@ -12,10 +12,10 @@ import skyArrow from '../media/skyArrow.png';
 import tealArrow from '../media/tealArrow.png';
 
 const LandingPage = () => {
-    const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true, threshold: 0.3 });
-    const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true, threshold: 0.3 });
-    const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true, threshold: 0.3 });
-    const { ref: ref4, inView: inView4 } = useInView({ triggerOnce: true, threshold: 0.3 });
+    const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true, threshold: 0.6 });
+    const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true, threshold: 0.6 });
+    const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true, threshold: 0.6 });
+    const { ref: ref4, inView: inView4 } = useInView({ triggerOnce: true, threshold: 0.6 });
 
     const [showTypingText, setShowTypingText] = useState(false);
 
@@ -31,29 +31,30 @@ const LandingPage = () => {
                 className="bg-pic absolute h-screen w-screen bg-cover bg-center bg-no-repeat -z-10" 
             />
             <Navbar />
-            <div className="welcome min-h-screen flex items-center justify-center">
+            <div className="welcome min-h-screen flex flex-col items-center justify-center">
                 <h1 className="font-bold font-dancingscript sm:text-welcomeSizeSm md:text-welcomeSizeMd lg:text-welcomeSizeLg text-white">
                     <AnimatedText text="welcome" />
                 </h1>
             </div>
             <div className="transition"></div>
-            <div className="main-content p-5 min-h-screen bg-dark-indigo text-white sm:text-6xl md:text-7xl lg:text-8xl flex flex-col items-center" style={{ padding: '3%'}}>
-                <div className="title font-dancingscript" style={{ marginBottom: '1%'}}>
-                    <AnimatedText text="im khiet!" onAnimationEnd={handleAnimationEnd} />
-                </div>
-                <div className="title-des" style={{ marginBottom: '12%'}}>
+            <div className="main-content min-h-screen bg-dark-indigo text-white sm:text-6xl md:text-7xl lg:text-8xl flex flex-col items-center" style={{ padding: '3%'}}>
+                <h1 className="font-dancingscript">
+                    <AnimatedText text="im khiet" onAnimationEnd={handleAnimationEnd} />
+                </h1>
+                <div className="title-des" style={{ marginBottom: '5%'}}>
                     {showTypingText && (
-                        <p className="typing-text font-varelaround sm:text-2xl md:text-3xl lg:text-4xl italic">in my free time i love to...</p>
+                        <p className="typing-text font-varelaround sm:text-2xl md:text-3xl lg:text-4xl italic">and i love to...</p>
                     )}
                 </div>
-                <div className="overflow-hidden text-center"> 
-                    <div ref={ref1} className={`relative flex items-center animated-div ${inView1 ? 'animate-left' : ''}`} style={{ width: '100vw' }}>
+                <div className="flex flex-col overflow-hidden text-center"> 
+                    <div ref={ref1} className={`relative flex items-center animated-div ${inView1 ? 'animate-left' : ''}`}>
                         <img 
                             src={pinkArrow} 
                             alt="bg" 
-                            className=" -z-10" 
+                            className="-z-10" 
                             style={{ 
                                 width: '75vw',   
+                                display: 'block',
                             }}
                         />
                         <p className="absolute text-center w-full">
@@ -61,14 +62,15 @@ const LandingPage = () => {
                                 className="font-dancingscript sm:text-6xl md:text-7xl lg:text-8xl text-pink"
                                 style={{
                                     textShadow: `0 0 5px rgba(255, 255, 255, 0.4)`,
-                                    filter: 'drop-shadow(0 0 7px rgba(214, 136, 193, 0.4))'
+                                    filter: 'drop-shadow(0 0 7px rgba(214, 136, 193, 0.4))',
+                                    lineHeight: '1'
                                 }}
                             >
                                 illustrate
                             </span>
                         </p>
                     </div>
-                    <div ref={ref2} className={`relative flex items-center justify-end animated-div ${inView2 ? 'animate-right' : ''}`} style={{ width: '100vw' }}>
+                    <div ref={ref2} className={`relative flex items-center justify-end animated-div m-0 p-0 ${inView2 ? 'animate-right' : ''}`} style={{ width: '100vw' }}>
                         <img 
                             src={lavenderArrow} 
                             alt="bg" 
