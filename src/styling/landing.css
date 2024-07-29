@@ -78,3 +78,22 @@ html, body {
   margin-bottom: 200px;
 }
 
+/* ANIMATION FOR TYPING EFFECT */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
+
+.typing-text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid black; /* Adjust the caret color */
+  width: 0; /* Initially hide the text */
+  animation: typing 2s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
+}

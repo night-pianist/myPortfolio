@@ -8,6 +8,10 @@ module.exports = {
       colors: {
         'ice-blue': '#6EB3F4',
         'dark-indigo': '#080737',
+        'pink': '#D688C1',
+        'lavender': '#9773E0',
+        'sky': '#2F91D3',
+        'teal': '#2DCDC2',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],

@@ -1,24 +1,27 @@
-import { useNavigate, Link } from 'react-router-dom';
+import { useState } from 'react';
 import { useInView } from 'react-intersection-observer'; // scrolling effect
 import '../styling/landing.css';
-import logo from '../media/logo.png';
-import bg from '../media/bg.png';
-import leftArrow from '../media/leftArrow.png';
-import rightArrow from '../media/rightArrow.png';
-import newArrow from '../media/newArrow.png';
 import AnimatedText from './AnimatedWelcome';
+import Navbar from './Navbar';
+
+// images
+import bg from '../media/bg.png';
+import pinkArrow from '../media/pinkArrow.png';
+import lavenderArrow from '../media/lavenderArrow.png';
+import skyArrow from '../media/skyArrow.png';
+import tealArrow from '../media/tealArrow.png';
 
 const LandingPage = () => {
-    const navigate = useNavigate();
-
-    const logoOnClick = () => { navigate('/'); } // go to the landing page
-    const aboutOnClick = () => { navigate('/about'); } // go to the about page
-    const creationsOnClick = () => { navigate('/creations'); } // go to the creations page
-
     const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true, threshold: 0.3 });
     const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true, threshold: 0.3 });
     const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true, threshold: 0.3 });
     const { ref: ref4, inView: inView4 } = useInView({ triggerOnce: true, threshold: 0.3 });
+
+    const [showTypingText, setShowTypingText] = useState(false);
+
+    const handleAnimationEnd = () => {
+        setShowTypingText(true);
+    };
 
     return ( 
         <div className="landing-page">
@@ -27,45 +30,7 @@ const LandingPage = () => {
                 alt="bg" 
                 className="bg-pic absolute h-screen w-screen bg-cover bg-center bg-no-repeat -z-10" 
             />
-            <div className="navbar absolute w-[99%] gradient-shadow">
-                <div className="relative flex items-center">
-                    <img
-                        src={logo} 
-                        alt="logo" 
-                        className="logo h-[5%] w-[5%] m-[1%] cursor-pointer" 
-                        onClick={logoOnClick}
-                        style={{
-                            filter: 'drop-shadow(0 0 10px rgba(115, 189, 255, 0.5))'
-                        }}                    
-                    />
-                    <div className="btns-container absolute top-0 right-0 flex justify-end space-x-4" style={{ padding: '1%'}}>
-                        <button // about button 
-                            className="about-btn tracking-wide text-white font-varelaround sm:text-md md:text-lg lg:text-xl rounded-md cursor-pointer"
-                            style={{ 
-                                padding: '3%',
-                                margin: '10%',
-                                textShadow: `0 0 5px rgba(255, 255, 255, 0.5)`,
-                                filter: 'drop-shadow(0 0 7px rgba(115, 189, 255, 1.0))'
-                            }}
-                            onClick={aboutOnClick}
-                        > 
-                            creations
-                        </button>
-                        <button // creations button
-                            className="creation-btn tracking-wide text-white font-varelaround sm:text-md md:text-lg lg:text-xl rounded-md cursor-pointer"
-                            style={{ 
-                                padding: '3%',
-                                margin: '10%',
-                                textShadow: `0 0 5px rgba(255, 255, 255, 0.5)`,
-                                filter: 'drop-shadow(0 0 7px rgba(115, 189, 255, 1.0))'
-                            }}
-                            onClick={creationsOnClick}
-                        >
-                            about
-                        </button>
-                    </div>
-                </div>
-            </div>
+            <Navbar />
             <div className="welcome min-h-screen flex items-center justify-center">
                 <h1 className="font-bold font-dancingscript sm:text-welcomeSizeSm md:text-welcomeSizeMd lg:text-welcomeSizeLg text-white">
                     <AnimatedText text="welcome" />
@@ -73,13 +38,60 @@ const LandingPage = () => {
             </div>
             <div className="transition"></div>
             <div className="main-content p-5 min-h-screen bg-dark-indigo text-white sm:text-6xl md:text-7xl lg:text-8xl flex flex-col items-center" style={{ padding: '3%'}}>
-                <div className="title font-dancingscript" style={{ marginBottom: '15%'}}>
-                    <AnimatedText text="im khiet!" />
+                <div className="title font-dancingscript" style={{ marginBottom: '1%'}}>
+                    <AnimatedText text="im khiet!" onAnimationEnd={handleAnimationEnd} />
+                </div>
+                <div className="title-des" style={{ marginBottom: '12%'}}>
+                    {showTypingText && (
+                        <p className="typing-text font-varelaround sm:text-2xl md:text-3xl lg:text-4xl italic">in my free time i love to...</p>
+                    )}
                 </div>
                 <div className="overflow-hidden text-center"> 
                     <div ref={ref1} className={`relative flex items-center animated-div ${inView1 ? 'animate-left' : ''}`} style={{ width: '100vw' }}>
                         <img 
-                            src={leftArrow} 
+                            src={pinkArrow} 
+                            alt="bg" 
+                            className=" -z-10" 
+                            style={{ 
+                                width: '75vw',   
+                            }}
+                        />
+                        <p className="absolute text-center w-full">
+                            <span 
+                                className="font-dancingscript sm:text-6xl md:text-7xl lg:text-8xl text-pink"
+                                style={{
+                                    textShadow: `0 0 5px rgba(255, 255, 255, 0.4)`,
+                                    filter: 'drop-shadow(0 0 7px rgba(214, 136, 193, 0.4))'
+                                }}
+                            >
+                                illustrate
+                            </span>
+                        </p>
+                    </div>
+                    <div ref={ref2} className={`relative flex items-center justify-end animated-div ${inView2 ? 'animate-right' : ''}`} style={{ width: '100vw' }}>
+                        <img 
+                            src={lavenderArrow} 
+                            alt="bg" 
+                            className=" -z-10" 
+                            style={{ 
+                                width: '75vw',  
+                            }}
+                        />
+                        <p className="absolute text-center w-full">
+                            <span 
+                                className="font-dancingscript sm:text-6xl md:text-7xl lg:text-8xl text-lavender"
+                                style={{
+                                    textShadow: `0 0 5px rgba(255, 255, 255, 0.4)`,
+                                    filter: 'drop-shadow(0 0 7px rgba(151, 115, 224, 0.4))'
+                                }}
+                            >
+                                program
+                            </span>
+                        </p>
+                    </div>
+                    <div ref={ref3} className={`relative flex items-center animated-div ${inView3 ? 'animate-left' : ''}`} style={{ width: '100vw' }}>
+                        <img 
+                            src={skyArrow} 
                             alt="bg" 
                             className=" -z-10" 
                             style={{ 
@@ -88,37 +100,20 @@ const LandingPage = () => {
                             }}
                         />
                         <p className="absolute text-center w-full">
-                            <span className="font-varelaround sm:text-4xl md:text-5xl lg:text-6xl italic">an</span> 
-                            <span className="font-dancingscript sm:text-6xl md:text-7xl lg:text-8xl"> artist</span>
+                            <span 
+                                className="font-dancingscript sm:text-6xl md:text-7xl lg:text-8xl text-sky"
+                                style={{
+                                    textShadow: `0 0 5px rgba(255, 255, 255, 0.4)`,
+                                    filter: 'drop-shadow(0 0 7px rgba(47, 145, 211, 0.4))'
+                                }}
+                            >
+                                cad
+                            </span>
                         </p>
-                    </div>
-                    <div ref={ref2} className={`relative flex items-center justify-end animated-div ${inView2 ? 'animate-right' : ''}`} style={{ width: '100vw' }}>
-                        <img 
-                            src={newArrow} 
-                            alt="bg" 
-                            className=" -z-10" 
-                            style={{ 
-                                width: '75vw',
-                                 
-                            }}
-                        />
-                        <p className="absolute text-center w-full sm:text-5xl md:text-6xl lg:text-7xl">a programmer</p>
-                    </div>
-                    <div ref={ref3} className={`relative flex items-center animated-div ${inView3 ? 'animate-left' : ''}`} style={{ width: '100vw' }}>
-                        <img 
-                            src={leftArrow} 
-                            alt="bg" 
-                            className=" -z-10" 
-                            style={{ 
-                                width: '75vw',
-                                 
-                            }}
-                        />
-                        <p className="absolute text-center w-full sm:text-5xl md:text-6xl lg:text-7xl">a CAD technician</p>
                     </div>
                     <div ref={ref4} className={`relative flex items-center justify-end animated-div ${inView4 ? 'animate-right' : ''}`} style={{ width: '100vw' }}>
                         <img 
-                            src={rightArrow} 
+                            src={tealArrow} 
                             alt="bg" 
                             className=" -z-10" 
                             style={{ 
@@ -126,11 +121,18 @@ const LandingPage = () => {
                                  
                             }}
                         />
-                        <p className="absolute text-center w-full sm:text-5xl md:text-6xl lg:text-7xl">a music lover</p>
+                        <p className="absolute text-center w-full">
+                            <span 
+                                className="font-dancingscript sm:text-6xl md:text-7xl lg:text-8xl text-teal"
+                                style={{
+                                    textShadow: `0 0 5px rgba(255, 255, 255, 0.4)`,
+                                    filter: 'drop-shadow(0 0 7px rgba(45, 205, 194, 0.4))'
+                                }}
+                            >
+                                play piano
+                            </span>
+                        </p>
                     </div>
-                    {/* <div ref={ref4} className={`animated-div ${inView4 ? 'animate-right' : ''}`}>
-                        <p>a music lover</p>
-                    </div> */}
                 </div>
             </div>
         </div>
