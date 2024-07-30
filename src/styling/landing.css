@@ -76,12 +76,10 @@ html, body {
 
 .animate-left { /* slide in from left */
   animation: slideInLeft 1s ease-out forwards;
-  /* margin-bottom: 200px; */
 }
 
 .animate-right { /* slide in from right */
   animation: slideInRight 1s ease-out forwards;
-  /* margin-bottom: 200px; */
 }
 
 /* ANIMATION FOR TYPING EFFECT */
