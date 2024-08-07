@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LandingPage from './components/LandingPage';
 import About from './components/About';
-import Creations from './components/Creations';
+import Artwork from './components/Artwork';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
           <Routes>
             <Route path="/" element={<LandingPage />}/>
             <Route path="/about" element={<About />}/>
-            <Route path="/creations" element={<Creations />}/>
+            <Route path="/artwork" element={<Artwork />}/>
           </Routes>
         </Router>
       </header>

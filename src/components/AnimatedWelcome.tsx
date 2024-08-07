@@ -8,7 +8,7 @@ interface AnimatedTextProps {
 }  
 
 const AnimatedText: React.FC<AnimatedTextProps> = ({ text, onAnimationEnd }) => {
-    const { ref: ref, inView: inView } = useInView({ triggerOnce: true, threshold: 0.1 });
+    const { ref: ref, inView: inView } = useInView({ triggerOnce: true, threshold: 0.05 });
     
     useEffect(() => {
         if (inView && onAnimationEnd) {

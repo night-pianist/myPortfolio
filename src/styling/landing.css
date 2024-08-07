@@ -27,7 +27,7 @@ html, body {
 /* TRANSITION B/W LANDING & MAIN */
 .transition {
     background: linear-gradient(to bottom, transparent, #080737);
-    min-height: 30vh;
+    min-height: 40vh;
 }
 
 /* ANIMATION FOR TITLE */
@@ -76,10 +76,12 @@ html, body {
 
 .animate-left { /* slide in from left */
   animation: slideInLeft 1s ease-out forwards;
+  margin-bottom: 5%;
 }
 
 .animate-right { /* slide in from right */
   animation: slideInRight 1s ease-out forwards;
+  margin-bottom: 5%;
 }
 
 /* ANIMATION FOR TYPING EFFECT */

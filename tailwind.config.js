@@ -25,6 +25,7 @@ module.exports = {
         'welcomeSizeLg': '10rem',
         'welcomeSizeMd': '9rem',
         'welcomeSizeSm': '8rem',
+        'xxs': '0.5rem',
       },
     },
   },

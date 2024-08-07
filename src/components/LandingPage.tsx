@@ -38,14 +38,16 @@ const LandingPage = () => {
             </div>
             <div className="transition"></div>
             <div className="main-content min-h-screen bg-dark-indigo text-white sm:text-6xl md:text-7xl lg:text-8xl flex flex-col items-center" style={{ padding: '3%'}}>
-                <h1 className="font-dancingscript">
-                    <AnimatedText text="im khiet" onAnimationEnd={handleAnimationEnd} />
-                </h1>
-                <div className="title-des" style={{ marginBottom: '5%'}}>
+                <div style={{ marginBottom: '7%', marginTop: '2%'}}>
+                    <h1 className="font-dancingscript">
+                        <AnimatedText text="im khiet and i..." onAnimationEnd={handleAnimationEnd} />
+                    </h1>
+                </div>
+                {/* <div className="title-des" style={{ marginBottom: '5%'}}>
                     {showTypingText && (
                         <p className="typing-text font-varelaround sm:text-2xl md:text-3xl lg:text-4xl italic">and i love to...</p>
                     )}
-                </div>
+                </div> */}
                 <div className="flex flex-col overflow-hidden text-center"> 
                     <div ref={ref1} className={`relative flex items-center animated-div ${inView1 ? 'animate-left' : ''}`}>
                         <img 
@@ -87,7 +89,7 @@ const LandingPage = () => {
                                     filter: 'drop-shadow(0 0 7px rgba(151, 115, 224, 0.4))'
                                 }}
                             >
-                                program
+                                code
                             </span>
                         </p>
                     </div>
