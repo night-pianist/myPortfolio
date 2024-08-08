@@ -50,10 +50,10 @@ const Navbar = () => {
                             <a href="/artwork" className="block px-4 py-2 hover:italic">
                                 art
                             </a>
-                            <a href="#apps" className="block px-4 py-2 hover:italic">
+                            <a href="/programs" className="block px-4 py-2 hover:italic">
                                 programs
                             </a>
-                            <a href="#cad-models" className="block px-4 py-2 hover:italic">
+                            <a href="/cad-models" className="block px-4 py-2 hover:italic">
                                 cad models
                             </a>
                         </div>
