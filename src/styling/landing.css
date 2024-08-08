@@ -103,3 +103,18 @@ html, body {
   width: 0; /* Initially hide the text */
   animation: typing 3s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
 }
+
+/* ARTWORK */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 2.0s ease-in-out;
+}
+

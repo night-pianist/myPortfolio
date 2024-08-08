@@ -5,9 +5,10 @@ import '../styling/landing.css';
 interface AnimatedTextProps {
     text: string;
     onAnimationEnd?: () => void;
+    speed: number;
 }  
 
-const AnimatedText: React.FC<AnimatedTextProps> = ({ text, onAnimationEnd }) => {
+const AnimatedText: React.FC<AnimatedTextProps> = ({ text, onAnimationEnd, speed }) => {
     const { ref: ref, inView: inView } = useInView({ triggerOnce: true, threshold: 0.05 });
     
     useEffect(() => {
@@ -28,7 +29,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({ text, onAnimationEnd }) => 
                 ref={ref}
                 className={`animated-div inline-block transform ${inView ? 'animate-title' : ''}`}
                 style={{ 
-                    animationDelay: `${index * 0.1}s`,
+                    animationDelay: `${index * speed}s`,
                     textShadow: '0 0 10px rgba(255, 255, 255, 0.7)', 
                 }}
             >
