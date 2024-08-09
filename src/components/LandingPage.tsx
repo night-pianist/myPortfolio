@@ -133,7 +133,7 @@ const LandingPage = () => {
                                     filter: 'drop-shadow(0 0 7px rgba(45, 205, 194, 0.4))'
                                 }}
                             >
-                                play piano
+                                love music
                             </span>
                         </p>
                     </div>

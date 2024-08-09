@@ -30,7 +30,7 @@ const images: Image[] = [
     { src: img3, alt: 'Image 3', title: 'bright days', medium: 'prisma colors', date: 'july 2023', description: '', path: 'bright-days' },
     { src: img4, alt: 'Image 4', title: 'ocean', medium: 'prisma colors', date: 'october 2021', description: '', path: 'ocean' },
     { src: img5, alt: 'Image 5', title: 'dreams', medium: 'prisma colors', date: 'october 2021', description: '', path: 'dreams' },
-    { src: img6, alt: 'Image 6', title: 'faerie forest', medium: 'prisma colors', date: 'june 2022', description: 'des', path: 'faerie-woods' },
+    { src: img6, alt: 'Image 6', title: 'faerie forest', medium: 'prisma colors', date: 'june 2022', description: 'des', path: 'faerie-forest' },
     { src: img7, alt: 'Image 7', title: 'reflection', medium: 'prisma colors', date: 'november 2021', description: 'des', path: 'reflection' },
     { src: img8, alt: 'Image 8', title: 'pastel days', medium: 'prisma colors', date: 'september 2023', description: 'des', path: 'pastel-days' },
     { src: img9, alt: 'Image 9', title: 'bridge', medium: 'prisma colors', date: 'march 2024', description: 'des', path: 'bridge' },

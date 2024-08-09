@@ -21,12 +21,12 @@ export default Programs;
 
 /* coding to.. 
 
-revolutionize learning
+revolutionize learning: 1st place touch screen / 1st use of ai in education
 
-raise mental health awareness   
+raise mental health awareness: popular vote 
 
 empower women
 
-
+grocery shopping simplified
 
 */
