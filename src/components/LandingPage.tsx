@@ -133,8 +133,9 @@ const LandingPage = () => {
                                     filter: 'drop-shadow(0 0 7px rgba(45, 205, 194, 0.4))'
                                 }}
                             >
-                                love music
-                            </span>
+                                love music 
+                            </span> 
+                            { /* add spining 3d gifs or something? like https://useplink.com/en/ */ }
                         </p>
                     </div>
                 </div>
