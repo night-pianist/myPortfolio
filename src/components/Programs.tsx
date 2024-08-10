@@ -37,7 +37,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, technolog
 
 const Programs = () => {
     const toOpennote = () => { window.location.href = 'https://opennote.me/' }
-    
+    const toOpennoteDevpost = () => { window.location.href = 'https://devpost.com/software/opennote-h4xjnk' }
+    const toBlob = () => { window.location.href = 'https://blobbyblob.vercel.app/intro.html' }
+    const toBlobDevpost = () => { window.location.href = 'https://devpost.com/software/b-l-o-b' }
+    const toSWEDevpost = () => { window.location.href = 'https://devpost.com/software/mentorspace-k9ejyb' }
+
     return (
         <div className="programs bg-dark-indigo">
             <Navbar /> 
@@ -50,34 +54,32 @@ const Programs = () => {
                 </div> 
                 
                 <div className="grid grid-cols-1 gap-4"> {/* displays projects */}
-                    <div 
-                        className="relative w-full transition-filter duration-300 ease-in-out hover:drop-shadow-blue-glow"
-                        onClick={toOpennote}
-                    > {/* opennote */}
-                        <img
-                            src={opennote} 
-                            alt="opennote" 
-                            className="rounded-2xl"                
-                        /> 
-                        <div className="absolute inset-0 z-0" style={{ background: "radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 200%)", }}></div> {/* overlay */}
+                    <div className="relative w-full transition-filter duration-300 ease-in-out hover:drop-shadow-blue-glow">
+                        <div className="opennote-img" onClick={toOpennote} style={{ zIndex: 1 }}>
+                            <img
+                                src={opennote} 
+                                alt="opennote" 
+                                className="rounded-2xl" 
+                                onClick={toOpennote}               
+                            /> 
+                            <div className="absolute inset-0 z-0" onClick={toOpennote} style={{ background: "radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 200%)", }}></div> {/* overlay */}
+                        </div>
                         
                         <div className="absolute inset-0 flex flex-col justify-between p-4 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                            {/* Title */}
-                            <div className="text-white text-xl font-bold mb-4 flex justify-center">
-                                <span className="bg-indigo-600 p-2 rounded-lg">
-                                    revolutionize learning
+                            <div className="flex justify-center">
+                                <span className="text-white font-varelaround bg-black bg-opacity-70 p-[1%] rounded-lg sm:text-xl md:text-2xl lg:text-3xl font-bold italic mb-4">
+                                    ...revolutionize learning
                                 </span>
                             </div>
-                            {/* Description and Arrow */}
-                            <div className="flex items-end justify-between">
-                            <div className="text-white bg-black bg-opacity-70 p-2 rounded-md">
-                                Short description goes here
-                            </div>
-                            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-                                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16l4-4m0 0l-4-4m4 4H3"></path>
-                                </svg>
-                            </a>
+                            <div className="flex ">
+                                <div className="font-varelaround text-white sm:text-sm md:text-md lg:text-lg bg-black bg-opacity-70 p-2 mr-[1%] rounded-md hover:italic cursor-pointer" onClick={toOpennoteDevpost}>
+                                    best use of ai in education @ la hacks 2024 
+                                </div>
+                                <div className="font-varelaround text-white bg-black bg-opacity-70 p-2 mr-[1%] rounded-md cursor-pointer">
+                                    <svg className="w-6 h-6 text-white hover:scale-125" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" onClick={toOpennote}>
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16l4-4m0 0l-4-4m4 4H3"></path>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -90,7 +92,26 @@ const Programs = () => {
                                 className="rounded-xl"                
                             /> {/* blob */}
                             <div className="absolute inset-0 z-0" style={{ background: "radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 200%)", }}></div> {/* overlay */}
+                            
+                            <div className="absolute inset-0 flex flex-col justify-between p-4 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                                <div className="flex justify-center">
+                                    <span className="text-white font-varelaround bg-black bg-opacity-70 p-[1%] rounded-lg sm:text-md md:text-lg lg:text-xl font-bold italic mb-4">
+                                        ...raise mental health awareness
+                                    </span>
+                                </div>
+                                <div className="flex ">
+                                    <div className="font-varelaround text-white sm:text-xs md:text-sm lg:text-md bg-black bg-opacity-70 p-2 mr-[1%] rounded-md hover:italic cursor-pointer" onClick={toBlobDevpost}>
+                                        popular vote @ ucla hack2impact 2024 
+                                    </div>
+                                    <div className="font-varelaround text-white bg-black bg-opacity-70 p-2 mr-[1%] rounded-md cursor-pointer">
+                                        <svg className="w-6 h-6 text-white hover:scale-125" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" onClick={toBlob}>
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16l4-4m0 0l-4-4m4 4H3"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
                         <div className="relative w-full flex transition-filter duration-300 ease-in-out hover:drop-shadow-blue-glow">
                             <img
                                 src={swe} 
@@ -98,6 +119,18 @@ const Programs = () => {
                                 className="rounded-xl"                
                             /> {/* mentorspace */}
                             <div className="absolute inset-0 z-0" style={{ background: "radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 200%)", }}></div> {/* overlay */}
+                            <div className="absolute inset-0 flex flex-col justify-between p-4 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                                <div className="flex justify-center">
+                                    <span className="text-white font-varelaround bg-light-blue bg-opacity-70 p-[1%] rounded-lg sm:text-md md:text-lg lg:text-xl font-bold italic mb-4">
+                                        ...empower women in STEM
+                                    </span>
+                                </div>
+                                <div className="flex">
+                                    <div className="font-varelaround text-white sm:text-xs md:text-sm lg:text-md bg-light-blue bg-opacity-70 p-2 mr-[1%] rounded-md hover:italic cursor-pointer" onClick={toSWEDevpost}>
+                                        venushacks 2024 
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 

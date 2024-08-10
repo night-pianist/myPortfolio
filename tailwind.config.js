@@ -12,6 +12,7 @@ module.exports = {
         'lavender': '#9773E0',
         'sky': '#2F91D3',
         'teal': '#2DCDC2',
+        'light-blue': '#579dff',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
