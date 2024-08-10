@@ -1,7 +1,7 @@
 import Navbar from './Navbar';
 import React, { useState, useEffect, useRef } from 'react';
 import AnimatedText from './AnimatedWelcome';
-import '../styling/landing.css';
+import '../styling/styles.css';
 
 // images
 import img1 from '../media/northernlights.png';

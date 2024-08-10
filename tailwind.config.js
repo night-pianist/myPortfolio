@@ -27,6 +27,9 @@ module.exports = {
         'welcomeSizeSm': '8rem',
         'xxs': '0.5rem',
       },
+      dropShadow: {
+        'blue-glow': '0 0 15px rgba(115, 189, 255, 0.8)',
+      },
     },
   },
   plugins: [],

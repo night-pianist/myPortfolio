@@ -4,7 +4,7 @@ const CAD = () => {
     return ( 
         <div>
             <Navbar />
-        </div>
+        </div> 
     );
 }
  

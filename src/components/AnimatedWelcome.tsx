@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
-import '../styling/landing.css';
+import '../styling/styles.css';
 
 interface AnimatedTextProps {
     text: string;
