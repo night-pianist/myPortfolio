@@ -8,33 +8,6 @@ import opennote from '../media/opennote.png'
 import blob from '../media/blob.png'
 import swe from '../media/swe.png'
 
-type ProjectCardProps = {
-    title: string;
-    description: string;
-    technologies: string;
-    imageSrc: string;
-    imageAlt: string;
-};
-
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, technologies, imageSrc, imageAlt }) => (
-    <div 
-        className="bg-white text-black p-4 rounded-lg relative h-96"
-        style={{ backgroundImage: `url(${imageSrc})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-    >
-        <div className="inset-0 bg-black opacity-20 z-0"></div>
-
-        <div className="relative z-10">
-            <h3 className="text-2xl font-bold mb-2">{title}</h3>
-            <p className="text-lg mb-4">{description}</p>
-            <p className="text-sm text-gray-700">technologies: {technologies}</p>
-            <button className="mt-4 bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition-colors duration-300">
-                view project
-            </button>
-        </div>
-    </div>
-);
-
-
 const Programs = () => {
     const toOpennote = () => { window.location.href = 'https://opennote.me/' }
     const toOpennoteDevpost = () => { window.location.href = 'https://devpost.com/software/opennote-h4xjnk' }
@@ -133,8 +106,6 @@ const Programs = () => {
                             </div>
                         </div>
                     </div>
-
-                    {/* <ProjectCard title='opennote' description='' technologies='' imageSrc={opennote} imageAlt=''/> */}
                 </div>
             </div>
         </div>
