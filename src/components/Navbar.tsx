@@ -53,9 +53,9 @@ const Navbar = () => {
                             <a href="/programs" className="block px-4 py-2 hover:italic">
                                 programs
                             </a>
-                            <a href="/cad-models" className="block px-4 py-2 hover:italic">
+                            {/* <a href="/cad-models" className="block px-4 py-2 hover:italic">
                                 cad models
-                            </a>
+                            </a> */}
                         </div>
                     )}
 
