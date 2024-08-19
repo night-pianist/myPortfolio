@@ -4,15 +4,15 @@ import AnimatedText from './AnimatedWelcome';
 import '../styling/styles.css';
 
 // images
-import img1 from '../media/northernlights.png';
-import img2 from '../media/acotar.png';
-import img3 from '../media/waterfall.png';
-import img4 from '../media/ocean.png';
-import img5 from '../media/dreams.png';
-import img6 from '../media/tcp.png';
-import img7 from '../media/tear.png';
-import img8 from '../media/pastel.png';
-import img9 from '../media/bridge.png';
+import img1 from '../media/art/northernlights.png';
+import img2 from '../media/art/acotar.png';
+import img3 from '../media/art/waterfall.png';
+import img4 from '../media/art/ocean.png';
+import img5 from '../media/art/dreams.png';
+import img6 from '../media/art/tcp.png';
+import img7 from '../media/art/tear.png';
+import img8 from '../media/art/pastel.png';
+import img9 from '../media/art/bridge.png';
 
 interface Image {
     src: string;
@@ -104,7 +104,7 @@ const CAD = () => {
             <div className="container mx-auto text-center py-8">
                 <div className="flex justify-center items-center" style={{ marginBottom: '5%', marginTop: '5%'}}>
                     <h1 className="font-dancingscript text-white sm:text-6xl md:text-7xl lg:text-8xl">
-                        <AnimatedText text="engineering and designing..." speed={0.05}/>
+                        <AnimatedText text="engineering and design..." speed={0.04}/>
                     </h1>
                 </div>
                 <div className={`${fadeIn ? 'fade-in' : ''}`}>

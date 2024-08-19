@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 import '../styling/styles.css';
 
 // images
-import opennote from '../media/opennote.png'
-import blob from '../media/blob.png'
-import swe from '../media/swe.png'
+import opennote from '../media/programs/opennote.png'
+import blob from '../media/programs/blob.png'
+import swe from '../media/programs/swe.png'
 
 const Programs = () => {
     const toOpennote = () => { window.location.href = 'https://opennote.me/' }

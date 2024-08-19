@@ -6,10 +6,10 @@ import Navbar from './Navbar';
 
 // images
 import bg from '../media/bg.png';
-import pinkArrow from '../media/pinkArrow.png';
-import lavenderArrow from '../media/lavenderArrow.png';
-import skyArrow from '../media/skyArrow.png';
-import tealArrow from '../media/tealArrow.png';
+import pinkArrow from '../media/arrows/pinkArrow.png';
+import lavenderArrow from '../media/arrows/lavenderArrow.png';
+import skyArrow from '../media/arrows/skyArrow.png';
+import tealArrow from '../media/arrows/tealArrow.png';
 
 const LandingPage = () => {
     const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true, threshold: 0.6 });
