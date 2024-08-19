@@ -127,3 +127,8 @@ html, body {
   cursor: pointer;
   filter: drop-shadow(0 0 15px rgba(115, 189, 255, 0.8));
 }
+
+/* ABOUT PAGE */
+.perspective {
+  perspective: 1000px;
+}

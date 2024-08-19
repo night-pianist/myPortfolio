@@ -5,6 +5,8 @@ module.exports = {
   ],
   theme: {
     extend: {
+      transform: ['group-hover'],
+      rotate: ['group-hover'],
       colors: {
         'ice-blue': '#6EB3F4',
         'dark-indigo': '#080737',
