@@ -94,13 +94,13 @@ const Programs = () => {
                             <div className="absolute inset-0 z-0" style={{ background: "radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 200%)", }}></div> {/* overlay */}
                             <div className="absolute inset-0 flex flex-col justify-between p-4 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
                                 <div className="flex justify-center">
-                                    <span className="text-white font-varelaround bg-light-blue bg-opacity-70 p-[1%] rounded-lg sm:text-md md:text-lg lg:text-xl font-bold italic mb-4">
+                                    <span className="text-white font-varelaround bg-black bg-opacity-70 p-[1%] rounded-lg sm:text-md md:text-lg lg:text-xl font-bold italic mb-4">
                                         ...empower women in STEM
                                     </span>
                                 </div>
-                                <div className="flex">
-                                    <div className="font-varelaround text-white sm:text-xs md:text-sm lg:text-md bg-light-blue bg-opacity-70 p-2 mr-[1%] rounded-md hover:italic cursor-pointer" onClick={toSWEDevpost}>
-                                        venushacks 2024 
+                                <div className="flex ">
+                                    <div className="font-varelaround text-white sm:text-xs md:text-sm lg:text-md bg-black bg-opacity-70 p-2 mr-[1%] rounded-md hover:italic cursor-pointer" onClick={toBlobDevpost}>
+                                        venushacks 2024  
                                     </div>
                                 </div>
                             </div>

@@ -168,7 +168,6 @@ const CAD = () => {
                                 className="w-full max-w-4xl h-auto rounded-lg shadow-lg mb-4"
                             />
                             <h2 className="sm:text-2xl md:text-3xl lg:text-4xl font-bold italic p-[1%]">{image.title}</h2>
-                            {/* <h3 className="sm:text-md md:text-xl lg:text-2xl">medium: {image.medium}</h3> */}
                             <h3 className="sm:text-md md:text-xl lg:text-2xl pb-[5%]">completed: {image.date}</h3>
                         </div>
                         ))}
