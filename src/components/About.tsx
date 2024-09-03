@@ -39,34 +39,82 @@ const About = () => {
             </div>
 
 
-            <div className="bg-indigo-800 text-white py-16">
+            <div className="bg-indigo-900 text-white py-16">
                 <div className="container mx-auto px-6">
                     <h2 className="sm:text-3xl md:text-4xl lg:text-5xl font-bold font-varelaround text-center mb-12">
                         some more about me...
                     </h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {/* Card 1 */}
-                        <div className="group relative w-64 h-64 perspective">
 
-                            <div className="relative w-full h-full transform-style-3d transition-transform duration-700 group-hover:rotate-y-180">
-                                {/* Front Side */}
-                                <div className="absolute w-full h-full backface-hidden bg-indigo-700 p-6 rounded-lg shadow-lg flex flex-col items-center justify-center">
-                                    <h3 className="text-2xl font-semibold mb-2">Favorite Books</h3>
-                                    <p className="text-lg">Explore my love for literature</p>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 font-varelaround">
+                        
+                        <div className="group relative w-64 h-64">
+                            <div className="relative w-full h-full transform-style preserve-3d transition-transform duration-700 group-hover:rotate-y-180">
+                                <div className="absolute inset-0 flex flex-col justify-between p-4 opacity-100">
+                                    <div className="text-center absolute inset-0 w-full h-full backface-hidden p-6 rounded-lg shadow-lg flex flex-col items-center justify-center" style={{ background: "radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 200%) #6366F1", }}>
+                                        {/* <p className="text-lg">I AM AN</p> */}
+                                        <h3 className="text-2xl font-semibold mb-2">i am the MBTI INFJ</h3>
+                                    </div>
                                 </div>
-                                {/* Back Side */}
-                                <div className="absolute w-full h-full backface-hidden bg-indigo-900 p-6 rounded-lg shadow-lg flex flex-col items-center justify-center rotate-y-180">
-                                    <p className="text-lg">
-                                        I enjoy reading both fiction and non-fiction. Some favorites include
-                                        "Sapiens," "1984," and works by Maya Angelou.
-                                    </p>
+                                <div className="text-center absolute inset-0 flex flex-col justify-between p-4 opacity-0 hover:opacity-100 transition-opacity duration-200 ease-in-out">
+                                    <div className="absolute inset-0 w-full h-full backface-hidden p-6 rounded-lg shadow-lg flex flex-col items-center justify-center" style={{ background: "radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 200%) #6366F1", }}>
+                                        <p className="text-lg"><a href="https://www.16personalities.com/infj-personality" className="text-light-blue">advocate</a></p>
+                                        <p className="text-lg">"quiet visionaries"</p>
+                                    </div>
                                 </div>
                             </div>
-
                         </div>
 
-                    {/* Repeat similar cards for other fun facts */}
+                        <div className="group relative w-64 h-64">
+                            <div className="relative w-full h-full transform-style preserve-3d transition-transform duration-700 group-hover:rotate-y-180">
+                                <div className="absolute inset-0 flex flex-col justify-between p-4 opacity-100">
+                                    <div className="text-center absolute inset-0 w-full h-full backface-hidden p-6 rounded-lg shadow-lg flex flex-col items-center justify-center" style={{ background: "radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 200%) #6366F1", }}>
+                                        {/* <p className="text-lg">I CAN TYPE</p> */}
+                                        <h3 className="text-2xl font-semibold mb-2">i can type ~130wpm</h3>    
+                                    </div>
+                                </div>
+                                <div className="text-center absolute inset-0 flex flex-col justify-between p-4 opacity-0 hover:opacity-100 transition-opacity duration-200 ease-in-out">
+                                    <div className="absolute inset-0 w-full h-full backface-hidden p-6 rounded-lg shadow-lg flex flex-col items-center justify-center" style={{ background: "radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 200%) #6366F1", }}>
+                                        <p className="text-lg">playing piano for a decade has improved my dexterity</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="group relative w-64 h-64">
+                            <div className="relative w-full h-full transform-style preserve-3d transition-transform duration-700 group-hover:rotate-y-180">
+                                <div className="absolute inset-0 flex flex-col justify-between p-4 opacity-100">
+                                    <div className="text-center absolute inset-0 w-full h-full backface-hidden p-6 rounded-lg shadow-lg flex flex-col items-center justify-center" style={{ background: "radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 200%) #6366F1", }}>
+                                        {/* <p className="text-lg">i could listen to music forever</p> */}
+                                        <h3 className="text-2xl font-semibold mb-2">i could listen to music forever</h3>    
+                                    </div>
+                                </div>
+                                <div className="text-center absolute inset-0 flex flex-col justify-between p-4 opacity-0 hover:opacity-100 transition-opacity duration-200 ease-in-out">
+                                    <div className="absolute inset-0 w-full h-full backface-hidden p-6 rounded-lg shadow-lg flex flex-col items-center justify-center" style={{ background: "radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 200%) #6366F1", }}>
+                                        <p className="text-lg">i write piano covers for my favorite songs</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="group relative w-64 h-64">
+                            <div className="relative w-full h-full transform-style preserve-3d transition-transform duration-700 group-hover:rotate-y-180">
+                                <div className="absolute inset-0 flex flex-col justify-between p-4 opacity-100">
+                                    <div className="text-center absolute inset-0 w-full h-full backface-hidden p-6 rounded-lg shadow-lg flex flex-col items-center justify-center" style={{ background: "radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 200%) #6366F1", }}>
+                                        <h3 className="text-2xl font-semibold mb-2">i like going out</h3>    
+                                    </div>
+                                </div>
+                                <div className="text-center absolute inset-0 flex flex-col justify-between p-4 opacity-0 hover:opacity-100 transition-opacity duration-200 ease-in-out">
+                                    <div className="absolute inset-0 w-full h-full backface-hidden p-6 rounded-lg shadow-lg flex flex-col items-center justify-center" style={{ background: "radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 200%) #6366F1", }}>
+                                        <p className="text-lg">...whether to jog, see friends, or take a break</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+
+
+
                 </div>
             </div>
             
