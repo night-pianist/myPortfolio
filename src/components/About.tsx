@@ -1,7 +1,7 @@
 import Navbar from './Navbar';
 import '../styling/styles.css';
 
-import logo from '../media/logo.png';
+import headshot from '../media/headshot.png';
 
 const About = () => {
     return ( 
@@ -13,9 +13,9 @@ const About = () => {
                     <div className="flex flex-col items-center justify-center flex-[3] m-[2%] mb-[1%] mt-[10%]">
                         <div className="relative">
                             <img
-                                src={logo}
+                                src={headshot}
                                 alt="profile"
-                                className="w-48 h-48 md:w-full md:h-full rounded-full shadow-2xl border-8 border-white"
+                                className="w-40 h-40 md:w-full md:h-full rounded-full shadow-2xl border-8 border-white"
                                 style= {{ width: '310%', }}
                             />
                         </div>
