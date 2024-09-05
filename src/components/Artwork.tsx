@@ -104,7 +104,7 @@ const Creations = () => {
             <div className="container mx-auto text-center py-8">
                 <div className="flex justify-center items-center" style={{ marginBottom: '5%', marginTop: '5%'}}>
                     <h1 className="font-dancingscript text-white sm:text-6xl md:text-7xl lg:text-8xl">
-                        <AnimatedText text="creativity in imagination" speed={0.05}/>
+                        <AnimatedText text="creativity and imagination" speed={0.05}/>
                     </h1>
                 </div>
                 <div className={`${fadeIn ? 'fade-in' : ''}`}>

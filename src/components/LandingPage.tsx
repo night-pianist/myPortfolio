@@ -3,6 +3,7 @@ import { useInView } from 'react-intersection-observer'; // scrolling effect
 import '../styling/styles.css';
 import AnimatedText from './AnimatedWelcome';
 import Navbar from './Navbar';
+import { useNavigate } from 'react-router-dom';
 
 // images
 import bg from '../media/bg.png';
@@ -16,6 +17,12 @@ const LandingPage = () => {
     const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true, threshold: 0.6 });
     const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true, threshold: 0.6 });
     const { ref: ref4, inView: inView4 } = useInView({ triggerOnce: true, threshold: 0.6 });
+
+    const navigate = useNavigate();
+    const clickToArt = () => { navigate('/artwork'); }
+    const clickToCode = () => { navigate('/programs'); }
+    const clickToCad = () => { navigate('/cad-models'); }
+    const clickToAbout = () => { navigate('/about'); }
 
     const [showTypingText, setShowTypingText] = useState(false);
 
@@ -44,7 +51,7 @@ const LandingPage = () => {
                     </h1>
                 </div>
                 <div className="flex flex-col overflow-hidden text-center"> 
-                    <div ref={ref1} className={`relative flex items-center animated-div ${inView1 ? 'animate-left' : ''}`}>
+                    <div onClick={clickToArt} ref={ref1} className={`relative flex items-center cursor-pointer animated-div ${inView1 ? 'animate-left' : ''}`}>
                         <img 
                             src={pinkArrow} 
                             alt="bg" 
@@ -54,7 +61,7 @@ const LandingPage = () => {
                                 display: 'block',
                             }}
                         />
-                        <p className="absolute text-center w-full">
+                        <p className="absolute text-center w-full hover:scale-110">
                             <span 
                                 className="font-dancingscript sm:text-6xl md:text-7xl lg:text-8xl text-pink"
                                 style={{
@@ -67,7 +74,7 @@ const LandingPage = () => {
                             </span>
                         </p>
                     </div>
-                    <div ref={ref2} className={`relative flex items-center justify-end animated-div m-0 p-0 ${inView2 ? 'animate-right' : ''}`} style={{ width: '100vw' }}>
+                    <div onClick={clickToCode} ref={ref2} className={`cursor-pointer relative flex items-center justify-end animated-div m-0 p-0 ${inView2 ? 'animate-right' : ''}`} style={{ width: '100vw' }}>
                         <img 
                             src={lavenderArrow} 
                             alt="bg" 
@@ -76,7 +83,7 @@ const LandingPage = () => {
                                 width: '75vw',  
                             }}
                         />
-                        <p className="absolute text-center w-full">
+                        <p className="absolute text-center w-full hover:scale-110">
                             <span 
                                 className="font-dancingscript sm:text-6xl md:text-7xl lg:text-8xl text-lavender"
                                 style={{
@@ -88,7 +95,7 @@ const LandingPage = () => {
                             </span>
                         </p>
                     </div>
-                    <div ref={ref3} className={`relative flex items-center animated-div ${inView3 ? 'animate-left' : ''}`} style={{ width: '100vw' }}>
+                    <div onClick={clickToCad} ref={ref3} className={`cursor-pointer relative flex items-center animated-div ${inView3 ? 'animate-left' : ''}`} style={{ width: '100vw' }}>
                         <img 
                             src={skyArrow} 
                             alt="bg" 
@@ -98,7 +105,7 @@ const LandingPage = () => {
                                  
                             }}
                         />
-                        <p className="absolute text-center w-full">
+                        <p className="absolute text-center w-full hover:scale-110">
                             <span 
                                 className="font-dancingscript sm:text-6xl md:text-7xl lg:text-8xl text-sky"
                                 style={{
@@ -110,7 +117,7 @@ const LandingPage = () => {
                             </span>
                         </p>
                     </div>
-                    <div ref={ref4} className={`relative flex items-center justify-end animated-div ${inView4 ? 'animate-right' : ''}`} style={{ width: '100vw' }}>
+                    <div onClick={clickToAbout} ref={ref4} className={`cursor-pointer relative flex items-center justify-end animated-div ${inView4 ? 'animate-right' : ''}`} style={{ width: '100vw' }}>
                         <img 
                             src={tealArrow} 
                             alt="bg" 
@@ -120,7 +127,7 @@ const LandingPage = () => {
                                  
                             }}
                         />
-                        <p className="absolute text-center w-full">
+                        <p className="absolute text-center w-full hover:scale-110">
                             <span 
                                 className="font-dancingscript sm:text-6xl md:text-7xl lg:text-8xl text-teal"
                                 style={{
