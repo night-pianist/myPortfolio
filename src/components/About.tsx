@@ -28,11 +28,11 @@ const About = () => {
                             Hey I'm Khiet :) 
                         </h2>
                         <p className="sm:text-1xl md:text-2xl lg:text-3xl font-varelaround leading-relaxed text-center">
-                            I'm currently pursuing a path in software engineering. For me, computer science is math and art.  
+                            I'm currently pursuing a path in software engineering.   
 
                             Computer science allows me to leverage my logical problem-solving skills with creativity when 
                             designing solutions. On top of CS being a constantly expanding field, the reiterative process 
-                            of learning, creating applications, and reflecting makes programming each day a new adventure.
+                            of learning, developing applications to help others, and reflecting makes programming each day a new adventure.
                         </p>
                     </div>
                 </div>
