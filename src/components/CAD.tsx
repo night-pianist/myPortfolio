@@ -18,7 +18,7 @@ interface Image {
   }  
 
 const images: Image[] = [
-    { src: img1, alt: 'Image 1', title: 'oxygen tank encasing', date: 'may 2022', description: 'I designed this for an engineering competition :)', path: 'encasing' },
+    { src: img1, alt: 'Image 1', title: 'oxygen tank encasing', date: 'may 2022', description: 'I designed this for an engineering competition I won :)', path: 'encasing' },
     { src: img2, alt: 'Image 2', title: 'book nook', date: 'january 2024', description: 'I love reading books, and I wanted to design a book nook I could use for my bookshelf that illustrated a setting from a book', path: 'book-nook' },
     { src: img3, alt: 'Image 3', title: 'batarang', date: 'june 2023', description: 'I designed this for a friend', path: 'batarang' },
   ]; 

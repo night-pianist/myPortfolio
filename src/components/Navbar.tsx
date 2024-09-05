@@ -47,14 +47,14 @@ const Navbar = () => {
                                 filter: 'drop-shadow(0 0 5px rgba(115, 189, 255, 0.5))'
                             }}
                         >
-                            <a href="/artwork" className="block px-4 py-2 hover:italic">
-                                art
-                            </a>
                             <a href="/programs" className="block px-4 py-2 hover:italic">
                                 programs
                             </a>
                             <a href="/cad-models" className="block px-4 py-2 hover:italic">
                                 cad models
+                            </a>
+                            <a href="/illustrations" className="block px-4 py-2 hover:italic">
+                                illustrations
                             </a>
                         </div>
                     )}

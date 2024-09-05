@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import AnimatedText from './AnimatedWelcome';
 import { motion } from 'framer-motion';
@@ -14,6 +15,12 @@ const Programs = () => {
     const toBlob = () => { window.location.href = 'https://blobbyblob.vercel.app/intro.html' }
     const toBlobDevpost = () => { window.location.href = 'https://devpost.com/software/b-l-o-b' }
     const toSWEDevpost = () => { window.location.href = 'https://devpost.com/software/mentorspace-k9ejyb' }
+
+    // const [fadeIn, setFadeIn] = useState(false);
+    // useEffect(() => {
+    //     setFadeIn(true);
+    //     descriptionRefs.current = images.map(() => null); // initialize array
+    // }, []); 
 
     return (
         <div className="programs bg-dark-indigo">
@@ -106,6 +113,16 @@ const Programs = () => {
                             </div>
                         </div>
                     </div>
+
+                    <div className="m-[3%]">
+                        <h1 className="mb-[2%] font-dancingscript text-white sm:text-5xl md:text-6xl lg:text-7xl">
+                            more to come...
+                        </h1>
+                        <p className="font-dancingscript text-white sm:text-3xl md:text-4xl lg:text-5xl">
+                            check out my <a href="https://github.com/night-pianist" className="font-bold text-light-blue">github</a> for updates :)
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </div>

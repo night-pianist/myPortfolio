@@ -25,14 +25,17 @@ const About = () => {
                     {/* Text Section */}
                     <div className="flex-[7] max-w-2xl flex flex-col justify-center">
                         <h2 className="sm:text-4xl md:text-5xl lg:text-6xl font-varelaround text-center p-[5%]">
-                            Hey I'm Khiet :) 
+                            Hey I'm Khiet 
                         </h2>
-                        <p className="sm:text-1xl md:text-2xl lg:text-3xl font-varelaround leading-relaxed text-center">
+                        <p className="mb-[2%] sm:text-1xl md:text-2xl lg:text-3xl font-varelaround leading-relaxed text-center">
                             I'm currently pursuing a path in software engineering.   
 
                             Computer science allows me to leverage my logical problem-solving skills with creativity when 
                             designing solutions. On top of CS being a constantly expanding field, the reiterative process 
                             of learning, developing applications to help others, and reflecting makes programming each day a new adventure.
+                        </p>
+                        <p className="sm:text-1xl md:text-2xl lg:text-3xl font-varelaround leading-relaxed text-center">
+                            Feel free to reach out to me at my <a href="https://www.linkedin.com/in/khiet-h-12605b257/" className="text-light-blue">linkedin</a> :)
                         </p>
                     </div>
                 </div>

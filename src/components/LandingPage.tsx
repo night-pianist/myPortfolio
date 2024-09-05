@@ -19,7 +19,7 @@ const LandingPage = () => {
     const { ref: ref4, inView: inView4 } = useInView({ triggerOnce: true, threshold: 0.6 });
 
     const navigate = useNavigate();
-    const clickToArt = () => { navigate('/artwork'); }
+    const clickToArt = () => { navigate('/illustrations'); }
     const clickToCode = () => { navigate('/programs'); }
     const clickToCad = () => { navigate('/cad-models'); }
     const clickToAbout = () => { navigate('/about'); }
@@ -51,7 +51,7 @@ const LandingPage = () => {
                     </h1>
                 </div>
                 <div className="flex flex-col overflow-hidden text-center"> 
-                    <div onClick={clickToArt} ref={ref1} className={`relative flex items-center cursor-pointer animated-div ${inView1 ? 'animate-left' : ''}`}>
+                    <div onClick={clickToCode} ref={ref1} className={`relative flex items-center cursor-pointer animated-div ${inView1 ? 'animate-left' : ''}`}>
                         <img 
                             src={pinkArrow} 
                             alt="bg" 
@@ -70,11 +70,11 @@ const LandingPage = () => {
                                     lineHeight: '1'
                                 }}
                             >
-                                illustrate
+                                code
                             </span>
                         </p>
                     </div>
-                    <div onClick={clickToCode} ref={ref2} className={`cursor-pointer relative flex items-center justify-end animated-div m-0 p-0 ${inView2 ? 'animate-right' : ''}`} style={{ width: '100vw' }}>
+                    <div onClick={clickToCad} ref={ref2} className={`cursor-pointer relative flex items-center justify-end animated-div m-0 p-0 ${inView2 ? 'animate-right' : ''}`} style={{ width: '100vw' }}>
                         <img 
                             src={lavenderArrow} 
                             alt="bg" 
@@ -91,11 +91,11 @@ const LandingPage = () => {
                                     filter: 'drop-shadow(0 0 7px rgba(151, 115, 224, 0.4))'
                                 }}
                             >
-                                code
+                                cad
                             </span>
                         </p>
                     </div>
-                    <div onClick={clickToCad} ref={ref3} className={`cursor-pointer relative flex items-center animated-div ${inView3 ? 'animate-left' : ''}`} style={{ width: '100vw' }}>
+                    <div onClick={clickToArt} ref={ref3} className={`cursor-pointer relative flex items-center animated-div ${inView3 ? 'animate-left' : ''}`} style={{ width: '100vw' }}>
                         <img 
                             src={skyArrow} 
                             alt="bg" 
@@ -113,11 +113,11 @@ const LandingPage = () => {
                                     filter: 'drop-shadow(0 0 7px rgba(47, 145, 211, 0.4))'
                                 }}
                             >
-                                cad
+                                illustrate
                             </span>
                         </p>
                     </div>
-                    <div onClick={clickToAbout} ref={ref4} className={`cursor-pointer relative flex items-center justify-end animated-div ${inView4 ? 'animate-right' : ''}`} style={{ width: '100vw' }}>
+                    {/* <div onClick={clickToAbout} ref={ref4} className={`cursor-pointer relative flex items-center justify-end animated-div ${inView4 ? 'animate-right' : ''}`} style={{ width: '100vw' }}>
                         <img 
                             src={tealArrow} 
                             alt="bg" 
@@ -126,8 +126,8 @@ const LandingPage = () => {
                                 width: '75vw',
                                  
                             }}
-                        />
-                        <p className="absolute text-center w-full hover:scale-110">
+                        /> */}
+                        {/* <p className="absolute text-center w-full hover:scale-110">
                             <span 
                                 className="font-dancingscript sm:text-6xl md:text-7xl lg:text-8xl text-teal"
                                 style={{
@@ -136,10 +136,10 @@ const LandingPage = () => {
                                 }}
                             >
                                 love music 
-                            </span> 
+                            </span>  */}
                             { /* add spining 3d gifs or something? like https://useplink.com/en/ */ }
-                        </p>
-                    </div>
+                        {/* </p> */}
+                    {/* </div> */}
                 </div>
             </div>
         </div>
