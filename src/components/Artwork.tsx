@@ -154,6 +154,12 @@ const Creations = () => {
                         </div>
                         ))}
                     </div>
+
+                    <div className="m-[3%]">
+                        <h1 className="mb-[2%] font-dancingscript text-white sm:text-5xl md:text-6xl lg:text-7xl">
+                            more to come... :)
+                        </h1>
+                    </div>
                 </div>
             </div>
         </div>

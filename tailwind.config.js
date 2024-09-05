@@ -32,6 +32,7 @@ module.exports = {
       },
       dropShadow: {
         'blue-glow': '0 0 15px rgba(115, 189, 255, 0.8)',
+        'small-blue-glow': '0 0 10px rgba(115, 189, 255, 0.3)',
       },
     },
   },

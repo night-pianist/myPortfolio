@@ -34,18 +34,18 @@ const Programs = () => {
                 </div> 
                 
                 <div className="grid grid-cols-1 gap-4"> {/* displays projects */}
-                    <div className="relative w-full transition-filter duration-300 ease-in-out hover:drop-shadow-blue-glow">
-                        <div className="opennote-img" onClick={toOpennote} style={{ zIndex: 1 }}>
+                    <div className="relative w-full transition-filter duration-300 ease-in-out hover:drop-shadow-blue-glow cursor-pointer">
+                        <div className="opennote-img" onClick={toOpennote}>
                             <img
                                 src={opennote} 
                                 alt="opennote" 
                                 className="rounded-2xl" 
                                 onClick={toOpennote}               
                             /> 
-                            <div className="absolute inset-0 z-0" onClick={toOpennote} style={{ background: "radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 200%)", }}></div> {/* overlay */}
+                            <div className="absolute inset-0 z-0 pointer-events-none hover:pointer-events-auto" onClick={toOpennote} style={{ background: "radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 200%)", }}></div> {/* overlay */}
                         </div>
                         
-                        <div className="absolute inset-0 flex flex-col justify-between p-4 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                        <div onClick={toOpennote} className="absolute inset-0 flex flex-col justify-between p-4 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
                             <div className="flex justify-center">
                                 <span className="text-white font-varelaround bg-black bg-opacity-70 p-[1%] rounded-lg sm:text-xl md:text-2xl lg:text-3xl font-bold italic mb-4">
                                     ...revolutionize learning
@@ -65,7 +65,7 @@ const Programs = () => {
                     </div>
                     
                     <div className="grid grid-cols-2 gap-4">
-                        <div className="relative w-full flex transition-filter duration-300 ease-in-out hover:drop-shadow-blue-glow">
+                        <div className="relative w-full flex transition-filter duration-300 ease-in-out hover:drop-shadow-blue-glow cursor-pointer">
                             <img
                                 src={blob} 
                                 alt="opennote" 
@@ -73,13 +73,13 @@ const Programs = () => {
                             /> {/* blob */}
                             <div className="absolute inset-0 z-0" style={{ background: "radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 200%)", }}></div> {/* overlay */}
                             
-                            <div className="absolute inset-0 flex flex-col justify-between p-4 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                            <div onClick={toBlob} className="absolute inset-0 flex flex-col justify-between p-4 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
                                 <div className="flex justify-center">
                                     <span className="text-white font-varelaround bg-black bg-opacity-70 p-[1%] rounded-lg sm:text-md md:text-lg lg:text-xl font-bold italic mb-4">
                                         ...raise mental health awareness
                                     </span>
                                 </div>
-                                <div className="flex ">
+                                <div className="flex">
                                     <div className="font-varelaround text-white sm:text-xs md:text-sm lg:text-md bg-black bg-opacity-70 p-2 mr-[1%] rounded-md hover:italic cursor-pointer" onClick={toBlobDevpost}>
                                         popular vote @ ucla hack2impact 2024 
                                     </div>
@@ -92,14 +92,14 @@ const Programs = () => {
                             </div>
                         </div>
 
-                        <div className="relative w-full flex transition-filter duration-300 ease-in-out hover:drop-shadow-blue-glow">
+                        <div className="relative w-full flex transition-filter duration-300 ease-in-out hover:drop-shadow-blue-glow cursor-pointer">
                             <img
                                 src={swe} 
                                 alt="opennote" 
                                 className="rounded-xl"                
                             /> {/* mentorspace */}
                             <div className="absolute inset-0 z-0" style={{ background: "radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 200%)", }}></div> {/* overlay */}
-                            <div className="absolute inset-0 flex flex-col justify-between p-4 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                            <div onClick={toBlobDevpost} className="absolute inset-0 flex flex-col justify-between p-4 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out ">
                                 <div className="flex justify-center">
                                     <span className="text-white font-varelaround bg-black bg-opacity-70 p-[1%] rounded-lg sm:text-md md:text-lg lg:text-xl font-bold italic mb-4">
                                         ...empower women in STEM
@@ -119,7 +119,7 @@ const Programs = () => {
                             more to come...
                         </h1>
                         <p className="font-dancingscript text-white sm:text-3xl md:text-4xl lg:text-5xl">
-                            check out my <a href="https://github.com/night-pianist" className="font-bold text-light-blue">github</a> for updates :)
+                            check out my <a href="https://github.com/night-pianist" className="font-bold text-light-blue">github</a> for more details :)
                         </p>
                     </div>
 

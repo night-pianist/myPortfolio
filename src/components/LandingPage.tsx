@@ -12,6 +12,10 @@ import lavenderArrow from '../media/arrows/lavenderArrow.png';
 import skyArrow from '../media/arrows/skyArrow.png';
 import tealArrow from '../media/arrows/tealArrow.png';
 
+import programs from '../media/programs.png';
+import cad from '../media/cad.png';
+import art from '../media/art.png';
+
 const LandingPage = () => {
     const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true, threshold: 0.6 });
     const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true, threshold: 0.6 });
@@ -51,7 +55,7 @@ const LandingPage = () => {
                     </h1>
                 </div>
                 <div className="flex flex-col overflow-hidden text-center"> 
-                    <div onClick={clickToCode} ref={ref1} className={`relative flex items-center cursor-pointer animated-div ${inView1 ? 'animate-left' : ''}`}>
+                    <div onClick={clickToCode} ref={ref1} className={`relative group flex items-center cursor-pointer animated-div ${inView1 ? 'animate-left' : ''}`}>
                         <img 
                             src={pinkArrow} 
                             alt="bg" 
@@ -61,7 +65,7 @@ const LandingPage = () => {
                                 display: 'block',
                             }}
                         />
-                        <p className="absolute text-center w-full hover:scale-110">
+                        <p className="absolute text-center w-full group-hover:scale-110 transition-transform duration-500 ease-in-out">
                             <span 
                                 className="font-dancingscript sm:text-6xl md:text-7xl lg:text-8xl text-pink"
                                 style={{
@@ -73,8 +77,28 @@ const LandingPage = () => {
                                 code
                             </span>
                         </p>
+                        <span className="ml-[2%]">
+                            <img 
+                                src={programs} 
+                                alt="bg" 
+                                className="opacity-0 group-hover:opacity-100 group-hover:drop-shadow-small-blue-glow transition-opacity duration-500 ease-in-out rounded-md" 
+                                style={{ 
+                                    width: '65%',   
+                                }}
+                            />
+                        </span>
                     </div>
-                    <div onClick={clickToCad} ref={ref2} className={`cursor-pointer relative flex items-center justify-end animated-div m-0 p-0 ${inView2 ? 'animate-right' : ''}`} style={{ width: '100vw' }}>
+                    <div onClick={clickToCad} ref={ref2} className={`cursor-pointer relative group flex items-center justify-end animated-div m-0 p-0 ${inView2 ? 'animate-right' : ''}`} style={{ width: '100vw' }}>
+                        <span className="pl-[3%]">
+                            <img 
+                                src={cad} 
+                                alt="bg" 
+                                className="opacity-0 group-hover:opacity-100 group-hover:drop-shadow-small-blue-glow transition-opacity duration-500 ease-in-out rounded-md" 
+                                style={{ 
+                                    width: '105%',   
+                                }}
+                            />
+                        </span>
                         <img 
                             src={lavenderArrow} 
                             alt="bg" 
@@ -83,7 +107,7 @@ const LandingPage = () => {
                                 width: '75vw',  
                             }}
                         />
-                        <p className="absolute text-center w-full hover:scale-110">
+                        <p className="absolute text-center w-full group-hover:scale-110">
                             <span 
                                 className="font-dancingscript sm:text-6xl md:text-7xl lg:text-8xl text-lavender"
                                 style={{
@@ -95,7 +119,7 @@ const LandingPage = () => {
                             </span>
                         </p>
                     </div>
-                    <div onClick={clickToArt} ref={ref3} className={`cursor-pointer relative flex items-center animated-div ${inView3 ? 'animate-left' : ''}`} style={{ width: '100vw' }}>
+                    <div onClick={clickToArt} ref={ref3} className={`cursor-pointer relative group flex items-center animated-div ${inView3 ? 'animate-left' : ''}`} style={{ width: '100vw' }}>
                         <img 
                             src={skyArrow} 
                             alt="bg" 
@@ -105,7 +129,7 @@ const LandingPage = () => {
                                  
                             }}
                         />
-                        <p className="absolute text-center w-full hover:scale-110">
+                        <p className="absolute text-center w-full group-hover:scale-110">
                             <span 
                                 className="font-dancingscript sm:text-6xl md:text-7xl lg:text-8xl text-sky"
                                 style={{
@@ -116,6 +140,16 @@ const LandingPage = () => {
                                 illustrate
                             </span>
                         </p>
+                        <span className="ml-[2%]">
+                            <img 
+                                src={art} 
+                                alt="bg" 
+                                className="opacity-0 group-hover:opacity-100 group-hover:drop-shadow-small-blue-glow transition-opacity duration-500 ease-in-out rounded-md" 
+                                style={{ 
+                                    width: '85%',   
+                                }}
+                            />
+                        </span>
                     </div>
                     {/* <div onClick={clickToAbout} ref={ref4} className={`cursor-pointer relative flex items-center justify-end animated-div ${inView4 ? 'animate-right' : ''}`} style={{ width: '100vw' }}>
                         <img 
