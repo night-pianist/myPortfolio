@@ -18,9 +18,9 @@ interface Image {
   }  
 
 const images: Image[] = [
-    { src: img1, alt: 'Image 1', title: 'oxygen tank encasing', date: 'may 2022', description: '', path: 'encasing' },
-    { src: img2, alt: 'Image 2', title: 'book nook', date: 'june 2023', description: '', path: 'book-nook' },
-    { src: img3, alt: 'Image 3', title: 'batarang', date: 'january 2024', description: '', path: 'batarang' },
+    { src: img1, alt: 'Image 1', title: 'oxygen tank encasing', date: 'may 2022', description: 'I designed this for an engineering competition :)', path: 'encasing' },
+    { src: img2, alt: 'Image 2', title: 'book nook', date: 'january 2024', description: 'I love reading books, and I wanted to design a book nook I could use for my bookshelf that illustrated a setting from a book', path: 'book-nook' },
+    { src: img3, alt: 'Image 3', title: 'batarang', date: 'june 2023', description: 'I designed this for a friend', path: 'batarang' },
   ]; 
 
 const CAD = () => {
@@ -168,7 +168,8 @@ const CAD = () => {
                                 className="w-full max-w-4xl h-auto rounded-lg shadow-lg mb-4"
                             />
                             <h2 className="sm:text-2xl md:text-3xl lg:text-4xl font-bold italic p-[1%]">{image.title}</h2>
-                            <h3 className="sm:text-md md:text-xl lg:text-2xl pb-[5%]">completed: {image.date}</h3>
+                            <h3 className="sm:text-md md:text-xl lg:text-2xl pb-[1%] w-2/3">{image.description}</h3>
+                            <h3 className="sm:text-md md:text-lg lg:text-xl pb-[5%]">completed: {image.date}</h3>
                         </div>
                         ))}
                     </div>
