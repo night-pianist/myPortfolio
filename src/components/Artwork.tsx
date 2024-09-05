@@ -25,15 +25,15 @@ interface Image {
   }  
 
 const images: Image[] = [
-    { src: img1, alt: 'Image 1', title: 'northern lights', medium: 'prisma colors', date: 'july 2021', description: '', path: 'northern-lights' },
-    { src: img2, alt: 'Image 2', title: 'fantasy', medium: 'digital drawing', date: 'august 2021', description: '', path: 'fantasy' },
-    { src: img3, alt: 'Image 3', title: 'bright days', medium: 'prisma colors', date: 'july 2023', description: '', path: 'bright-days' },
-    { src: img4, alt: 'Image 4', title: 'ocean', medium: 'prisma colors', date: 'october 2021', description: '', path: 'ocean' },
-    { src: img5, alt: 'Image 5', title: 'dreams', medium: 'prisma colors', date: 'october 2021', description: '', path: 'dreams' },
-    { src: img6, alt: 'Image 6', title: 'faerie forest', medium: 'prisma colors', date: 'june 2022', description: 'des', path: 'faerie-forest' },
-    { src: img7, alt: 'Image 7', title: 'reflection', medium: 'prisma colors', date: 'november 2021', description: 'des', path: 'reflection' },
-    { src: img8, alt: 'Image 8', title: 'pastel days', medium: 'prisma colors', date: 'september 2023', description: 'des', path: 'pastel-days' },
-    { src: img9, alt: 'Image 9', title: 'bridge', medium: 'prisma colors', date: 'march 2024', description: 'des', path: 'bridge' },
+    { src: img1, alt: 'Image 1', title: 'northern lights', medium: 'prisma colors', date: 'july 2021', description: 'seeing northern lights is near the top of my bucket list, and I wanted to bring my dreams to paper and highlight the light and dark contrast', path: 'northern-lights' },
+    { src: img2, alt: 'Image 2', title: 'fantasy', medium: 'digital drawing', date: 'august 2021', description: 'I love reading fantasy books and wanted to illustrate an imaginary city with fantasical shooting stars in a colorful sky', path: 'fantasy' },
+    { src: img3, alt: 'Image 3', title: 'bright days', medium: 'prisma colors', date: 'july 2023', description: 'I drew this after getting back from a family trip where I saw waterfalls and wanted to capture the vacation in my own art style', path: 'bright-days' },
+    { src: img4, alt: 'Image 4', title: 'ocean', medium: 'prisma colors', date: 'october 2021', description: 'this was based on a picture of the ocean I found online-I wanted to try capturing the clear water from the waves', path: 'ocean' },
+    { src: img5, alt: 'Image 5', title: 'dreams', medium: 'prisma colors', date: 'october 2021', description: 'I was inspired to draw this by a sunset I saw; it was meant to be just the sky and ocean, but I decided to try adding a cliff with a river', path: 'dreams' },
+    { src: img6, alt: 'Image 6', title: 'faerie forest', medium: 'prisma colors', date: 'june 2022', description: 'this is another drawing inspired by a fantasy book I read and I wanted to focus more on drawing trees and nature', path: 'faerie-forest' },
+    { src: img7, alt: 'Image 7', title: 'reflection', medium: 'prisma colors', date: 'november 2021', description: 'I wanted to try a new concept and utilize all the extra functionality (flexible mirroring, layering, blending, etc.) that comes with digital painting', path: 'reflection' },
+    { src: img8, alt: 'Image 8', title: 'pastel days', medium: 'prisma colors', date: 'september 2023', description: 'I envisioned a pastel theme scene that was colorful and striking yet calming', path: 'pastel-days' },
+    { src: img9, alt: 'Image 9', title: 'bridge', medium: 'prisma colors', date: 'march 2024', description: 'I wanted to work on drawing bodies of water, but I wanted to make it more detailed so I added a bridge and some grass', path: 'bridge' },
   ];  
 
 const Creations = () => {
@@ -147,8 +147,10 @@ const Creations = () => {
                                 className="w-full max-w-4xl h-auto rounded-lg shadow-lg mb-4"
                             />
                             <h2 className="sm:text-2xl md:text-3xl lg:text-4xl font-bold italic p-[1%]">{image.title}</h2>
-                            <h3 className="sm:text-md md:text-xl lg:text-2xl">medium: {image.medium}</h3>
-                            <h3 className="sm:text-md md:text-xl lg:text-2xl pb-[5%]">completed: {image.date}</h3>
+                            <h3 className="sm:text-md md:text-xl lg:text-2xl pb-[1%] w-2/3">{image.description}</h3>
+                            <h3 className="sm:text-md md:text-lg lg:text-xl">medium: {image.medium}</h3>
+                            <h3 className="sm:text-md md:text-lg lg:text-xl pb-[5%]">completed: {image.date}</h3>
+
                         </div>
                         ))}
                     </div>

@@ -52,7 +52,7 @@ const About = () => {
                                 <div className="absolute inset-0 flex flex-col justify-between p-4 opacity-100">
                                     <div className="text-center absolute inset-0 w-full h-full backface-hidden p-6 rounded-lg shadow-lg flex flex-col items-center justify-center" style={{ background: "radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 200%) #6366F1", }}>
                                         {/* <p className="text-lg">I AM AN</p> */}
-                                        <h3 className="text-2xl font-semibold mb-2">MBTI INFJ</h3>
+                                        <h3 className="text-2xl font-semibold mb-2">mbti INFJ</h3>
                                     </div>
                                 </div>
                                 <div className="text-center absolute inset-0 flex flex-col justify-between p-4 opacity-0 hover:opacity-100 transition-opacity duration-200 ease-in-out">
