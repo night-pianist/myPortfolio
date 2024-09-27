@@ -28,7 +28,7 @@ const About = () => {
                             Hey I'm Khiet 
                         </h2>
                         <p className="mb-[2%] sm:text-1xl md:text-2xl lg:text-3xl font-varelaround leading-relaxed text-center">
-                            I'm currently pursuing a path in software engineering.   
+                            I'm currently pursuing a path in computer science.   
 
                             Computer science allows me to leverage my logical problem-solving skills with creativity when 
                             designing solutions. On top of CS being a constantly expanding field, the reiterative process 
