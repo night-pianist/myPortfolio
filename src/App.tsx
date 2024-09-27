@@ -5,10 +5,14 @@ import Artwork from './components/Artwork';
 import Programs from './components/Programs';
 import CAD from './components/CAD';
 import ScrollToTop from "./components/ScrollToTop";
+import { Helmet } from 'react-helmet';
 
 function App() {
   return (
     <div className="App">
+      <Helmet>
+        <title>Khiet</title>
+      </Helmet>
       <header className="App-header">
         <Router> 
           <ScrollToTop /> 
