@@ -28,12 +28,12 @@ const Programs = () => {
 
             <div className="main-content container mx-auto text-center py-8"> 
                 <div className="flex justify-center items-center" style={{ marginBottom: '5%', marginTop: '5%'}}>
-                    <h1 className="font-dancingscript text-white sm:text-6xl md:text-7xl lg:text-8xl">
+                    <h1 className="font-dancingscript text-white text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
                         <AnimatedText text="programming to..." speed={0.05}/> 
                     </h1>
                 </div> 
                 
-                <div className="grid grid-cols-1 gap-4"> {/* displays projects */}
+                <div className="grid grid-cols-1 gap-4 ml-[3%] mr-[3%]"> {/* displays projects */}
                     <div className="relative w-full transition-filter duration-300 ease-in-out hover:drop-shadow-blue-glow cursor-pointer">
                         <div className="opennote-img" onClick={toOpennote}>
                             <img

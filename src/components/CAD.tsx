@@ -104,12 +104,12 @@ const CAD = () => {
 
             <div className="container mx-auto text-center py-8">
                 <div className="flex justify-center items-center" style={{ marginBottom: '5%', marginTop: '5%'}}>
-                    <h1 className="font-dancingscript text-white sm:text-6xl md:text-7xl lg:text-8xl">
+                    <h1 className="font-dancingscript text-white text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
                         <AnimatedText text="engineering and design..." speed={0.04}/>
                     </h1>
                 </div>
                 <div className={`${fadeIn ? 'fade-in' : ''}`}>
-                  <div className="grid grid-cols-10 gap-4">
+                  <div className="grid grid-cols-10 gap-4 ml-4 mr-4">
                     {/* First image: horizontal, spans across the first 6 columns */}
                     <div className="col-span-6">
                       <div
@@ -162,7 +162,7 @@ const CAD = () => {
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-3 gap-4 pt-4">
+                  <div className="grid grid-cols-3 gap-4 pt-4 ml-4 mr-4">
                     <div className="col-span-1">
                       <div
                         className="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer h-64"
@@ -276,16 +276,16 @@ const CAD = () => {
                             key={index}
                             id={image.path}
                             ref={(el) => (descriptionRefs.current[index] = el)}
-                            className="my-8 flex flex-col items-center font-varelaround text-white"
+                            className="my-8 mr-8 ml-8 flex flex-col items-center font-varelaround text-white"
                         >
                             <img
                                 src={image.src}
                                 alt={image.alt}
-                                className="w-full max-w-4xl h-auto rounded-lg shadow-lg mb-4"
+                                className="w-full ml-4 mr-4 max-w-4xl h-auto rounded-lg shadow-lg mb-4"
                             />
-                            <h2 className="sm:text-2xl md:text-3xl lg:text-4xl font-bold italic p-[1%]">{image.title}</h2>
-                            <h3 className="sm:text-md md:text-xl lg:text-2xl pb-[1%] w-2/3">{image.description}</h3>
-                            <h3 className="sm:text-md md:text-lg lg:text-xl pb-[5%]">completed: {image.date}</h3>
+                            <h2 className="text-md sm:text-2xl md:text-3xl lg:text-4xl font-bold italic p-[1%]">{image.title}</h2>
+                            <h3 className="text-xs sm:text-md md:text-xl lg:text-2xl pb-[1%] w-2/3">{image.description}</h3>
+                            <h3 className="text-xs sm:text-md md:text-lg lg:text-xl pb-[5%]">completed: {image.date}</h3>
                         </div>
                         ))}
                     </div>
