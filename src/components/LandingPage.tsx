@@ -48,7 +48,7 @@ const LandingPage = () => {
                 </h1>
             </div>
             <div className="transition"></div>
-            <div className="main-content min-h-screen bg-dark-indigo text-white sm:text-6xl md:text-7xl lg:text-8xl flex flex-col items-center" style={{ padding: '3%'}}>
+            <div className="main-content bg-dark-indigo text-white sm:text-6xl md:text-7xl lg:text-8xl flex flex-col items-center" style={{ padding: '3%'}}>
                 <div style={{ marginBottom: '7%', marginTop: '2%'}}>
                     <h1 className="font-dancingscript text-4xl sm:text-8xl md:text-9xl lg:text-welcomeSizeLg">
                         <AnimatedText text="im khiet and i..." speed={0.05} onAnimationEnd={handleAnimationEnd} />

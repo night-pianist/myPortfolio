@@ -8,7 +8,7 @@ const About = () => {
         <div className="about bg-dark-indigo min-h-96">
             <Navbar />
 
-            <div className="relative overflow-hidden min-h-screen text-white">
+            <div className="relative overflow-hidden text-white">
                 <div className="container mx-auto flex flex-row justify-center items-center space-y-6 md:space-y-0 px-6 py-12">
                     <div className="flex flex-col items-center justify-center flex-[3] m-[2%] mb-[1%] mt-[10%]">
                         <div className="relative">
@@ -48,9 +48,10 @@ const About = () => {
                         some more about me...
                     </h2>
 
+                    <div className="flex justify-center items-center">
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 font-varelaround">
                         
-                        <div className="group relative w-64 h-64">
+                        <div className="group relative w-64 h-64 m-4">
                             <div className="relative w-full h-full transform-style preserve-3d transition-transform duration-700 group-hover:rotate-y-180">
                                 <div className="absolute inset-0 flex flex-col justify-between p-4 opacity-100">
                                     <div className="text-center absolute inset-0 w-full h-full backface-hidden p-6 rounded-lg shadow-lg flex flex-col items-center justify-center" style={{ background: "radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 200%) #6366F1", }}>
@@ -67,7 +68,7 @@ const About = () => {
                             </div>
                         </div>
 
-                        <div className="group relative w-64 h-64">
+                        <div className="group relative w-64 h-64 m-4">
                             <div className="relative w-full h-full transform-style preserve-3d transition-transform duration-700 group-hover:rotate-y-180">
                                 <div className="absolute inset-0 flex flex-col justify-between p-4 opacity-100">
                                     <div className="text-center absolute inset-0 w-full h-full backface-hidden p-6 rounded-lg shadow-lg flex flex-col items-center justify-center" style={{ background: "radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 200%) #6366F1", }}>
@@ -83,7 +84,7 @@ const About = () => {
                             </div>
                         </div>
 
-                        <div className="group relative w-64 h-64">
+                        <div className="group relative w-64 h-64 m-4">
                             <div className="relative w-full h-full transform-style preserve-3d transition-transform duration-700 group-hover:rotate-y-180">
                                 <div className="absolute inset-0 flex flex-col justify-between p-4 opacity-100">
                                     <div className="text-center absolute inset-0 w-full h-full backface-hidden p-6 rounded-lg shadow-lg flex flex-col items-center justify-center" style={{ background: "radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 200%) #6366F1", }}>
@@ -99,7 +100,7 @@ const About = () => {
                             </div>
                         </div>
 
-                        <div className="group relative w-64 h-64">
+                        <div className="group relative w-64 h-64 m-4">
                             <div className="relative w-full h-full transform-style preserve-3d transition-transform duration-700 group-hover:rotate-y-180">
                                 <div className="absolute inset-0 flex flex-col justify-between p-4 opacity-100">
                                     <div className="text-center absolute inset-0 w-full h-full backface-hidden p-6 rounded-lg shadow-lg flex flex-col items-center justify-center" style={{ background: "radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 200%) #6366F1", }}>
@@ -113,6 +114,8 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
+
+                    </div>
 
                     </div>
 
