@@ -104,7 +104,7 @@ const CAD = () => {
 
             <div className="container mx-auto text-center py-8">
                 <div className="flex justify-center items-center" style={{ marginBottom: '5%', marginTop: '5%'}}>
-                    <h1 className="font-dancingscript text-white text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
+                    <h1 className="font-dancingscript text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
                         <AnimatedText text="engineering and design..." speed={0.04}/>
                     </h1>
                 </div>
