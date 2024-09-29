@@ -43,14 +43,14 @@ const LandingPage = () => {
             />
             <Navbar />
             <div className="welcome min-h-screen flex flex-col items-center justify-center">
-                <h1 className="font-bold font-dancingscript sm:text-welcomeSizeSm md:text-welcomeSizeMd lg:text-welcomeSizeLg text-white">
+                <h1 className="font-bold font-dancingscript text-5xl sm:text-8xl md:text-9xl lg:text-welcomeSizeLg text-white">
                     <AnimatedText text="welcome" speed={0.1} />
                 </h1>
             </div>
             <div className="transition"></div>
             <div className="main-content min-h-screen bg-dark-indigo text-white sm:text-6xl md:text-7xl lg:text-8xl flex flex-col items-center" style={{ padding: '3%'}}>
                 <div style={{ marginBottom: '7%', marginTop: '2%'}}>
-                    <h1 className="font-dancingscript">
+                    <h1 className="font-dancingscript text-4xl sm:text-8xl md:text-9xl lg:text-welcomeSizeLg">
                         <AnimatedText text="im khiet and i..." speed={0.05} onAnimationEnd={handleAnimationEnd} />
                     </h1>
                 </div>
@@ -67,7 +67,7 @@ const LandingPage = () => {
                         />
                         <p className="absolute text-center w-full group-hover:scale-110 transition-transform duration-500 ease-in-out">
                             <span 
-                                className="font-dancingscript sm:text-6xl md:text-7xl lg:text-8xl text-pink"
+                                className="font-dancingscript text-xl sm:text-6xl md:text-7xl lg:text-8xl text-pink"
                                 style={{
                                     textShadow: `0 0 5px rgba(255, 255, 255, 0.4)`,
                                     filter: 'drop-shadow(0 0 7px rgba(214, 136, 193, 0.4))',
@@ -109,7 +109,7 @@ const LandingPage = () => {
                         />
                         <p className="absolute text-center w-full group-hover:scale-110">
                             <span 
-                                className="font-dancingscript sm:text-6xl md:text-7xl lg:text-8xl text-lavender"
+                                className="font-dancingscript text-xl sm:text-6xl md:text-7xl lg:text-8xl text-lavender"
                                 style={{
                                     textShadow: `0 0 5px rgba(255, 255, 255, 0.4)`,
                                     filter: 'drop-shadow(0 0 7px rgba(151, 115, 224, 0.4))'
@@ -131,7 +131,7 @@ const LandingPage = () => {
                         />
                         <p className="absolute text-center w-full group-hover:scale-110">
                             <span 
-                                className="font-dancingscript sm:text-6xl md:text-7xl lg:text-8xl text-sky"
+                                className="font-dancingscript text-xl sm:text-6xl md:text-7xl lg:text-8xl text-sky"
                                 style={{
                                     textShadow: `0 0 5px rgba(255, 255, 255, 0.4)`,
                                     filter: 'drop-shadow(0 0 7px rgba(47, 145, 211, 0.4))'

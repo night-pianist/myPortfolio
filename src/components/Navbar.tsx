@@ -28,7 +28,7 @@ const Navbar = () => {
                 />
                 <div className="btns-container z-10 absolute top-0 right-0 flex justify-end space-x-4" style={{ padding: '1%'}}>
                     <button // creations button 
-                        className="about-btn tracking-wide text-white font-bold font-varelaround sm:text-md md:text-lg lg:text-xl rounded-md cursor-pointer"
+                        className="about-btn tracking-wide text-white font-bold font-varelaround text-xs sm:text-md md:text-lg lg:text-xl rounded-md cursor-pointer"
                         style={{ 
                             padding: '3%',
                             margin: '10%',
@@ -41,7 +41,7 @@ const Navbar = () => {
                     </button>
                     {isOpen && (
                         <div 
-                            className="absolute -left-[44%] top-[65%] p-[1%] text-white font-varelaround sm:text-xs md:text-sm lg:text-md"
+                            className="absolute -left-[44%] top-[65%] p-[1%] text-white font-varelaround text-xxs sm:text-xs md:text-sm lg:text-md"
                             style={{ 
                                 textShadow: `0 0 5px rgba(255, 255, 255, 0.5)`,
                                 filter: 'drop-shadow(0 0 5px rgba(115, 189, 255, 0.5))'
@@ -60,7 +60,7 @@ const Navbar = () => {
                     )}
 
                     <button // about button
-                        className="creation-btn tracking-wide text-white font-bold font-varelaround sm:text-md md:text-lg lg:text-xl rounded-md cursor-pointer"
+                        className="creation-btn tracking-wide text-white font-bold font-varelaround text-xs sm:text-md md:text-lg lg:text-xl rounded-md cursor-pointer"
                         style={{ 
                             padding: '3%',
                             margin: '10%',

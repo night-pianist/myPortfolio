@@ -27,7 +27,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({ text, onAnimationEnd, speed
             <span
                 key={index}
                 ref={ref}
-                className={`animated-div inline-block transform ${inView ? 'animate-title' : ''}`}
+                className={`sm:text-8xl md:text-9xl lg:text-welcomeSizeLg animated-div inline-block transform ${inView ? 'animate-title' : ''}`}
                 style={{ 
                     animationDelay: `${index * speed}s`,
                     textShadow: '0 0 10px rgba(255, 255, 255, 0.7)', 
